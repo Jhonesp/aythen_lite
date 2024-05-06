@@ -1,0 +1,32 @@
+.legal_container{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+
+.legal_container .legal_content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    border-bottom: 1px solid #fff;
+}
+
+#last{
+    border-bottom: none;
+}
+
+.legal_container .legal_content h3{
+    margin: 0;
+    font-size: 16px;
+}
+
+.legal_container .legal_content p{
+    font-size: 14px;
+}
+
+.legal_container .legal_content select{
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,88 @@
+.bankmethods_container{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.bankmethods_container .bankmethods_header{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.bankmethods_container .bankmethods_header h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.bankmethods_container .bankmethods_header p{
+    margin: 0;
+    font-size: 16px;
+}
+
+.bankmethods_container .bankmethods_buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.bankmethods_container .bankmethods_buttons .bank_button_group{
+    display: flex;
+    flex-direction: row;
+    background-color: #9D90B9;
+    border-radius: 8px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+    outline: 1px solid white;
+}
+
+.bankmethods_container .bankmethods_buttons .button_start{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.bankmethods_container .bankmethods_buttons .bank_button_group .button_icon{
+    background-color: #E2D1F8;
+    border-radius: 6px;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bankmethods_container .bankmethods_buttons .bank_button_group .button_icon path{
+    color: #701BDD;
+}
+
+.bankmethods_container .bankmethods_buttons .bank_button_group .button_text{
+    display: flex;
+    flex-direction: column;
+}
+
+.bankmethods_container .bankmethods_buttons .bank_button_group .button_text h4{
+    font-size: 14px;
+    margin: 0;
+}
+
+.bankmethods_container .bankmethods_buttons .bank_button_group .button_text p{
+    font-size: 13px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.bankmethods_container .bankmethods_buttons .bank_button_group button{
+    cursor: pointer;
+    background-color: #701BDD;
+    border-radius: 6px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    padding: 10px;
+}

@@ -1,0 +1,70 @@
+.tabla_container{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.tabla_container h3,
+.tabla_container h4{
+    margin: 0;
+}
+
+.tabla_container h3{
+    font-size: 16px;
+}
+
+.tabla_container p{
+    font-size: 14px;
+}
+
+
+.tabla_container .elementos_container{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.tabla_container .elementos_container .elemento{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tabla_container .elementos_container .elemento h4{
+    font-size: 13px;
+}
+
+.tabla_container .elementos_container .elemento .campos{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+}
+
+.tabla_container .elementos_container .elemento .campos svg{
+    font-size: 18px;
+}
+
+.tabla_container .elementos_container .elemento .campos .check{
+    display: flex;
+    justify-content: center;
+    background-color: #DEDEDE;
+    min-height: 20px;
+    width: 15px;
+    padding: 8px;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+    border: none;
+}
+
+.tabla_container .elementos_container .elemento .campos .check input[type="checkbox"]{
+    accent-color: #701BDD;
+}
+
+.tabla_container .elementos_container .elemento .campos input[type="text"]{
+    border-radius: 0 4px 4px 0;
+    padding: 10px;
+    border: none;
+    flex: 1;
+}

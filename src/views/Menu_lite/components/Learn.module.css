@@ -1,0 +1,23 @@
+.learn_container{
+    flex: 1;
+    background-color: #816eaa;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.learn_container .learn_header{
+    padding: 20px 20px 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.learn_container .learn_header h1{
+    margin: 0;
+    font-size: 20px;
+}
+
+.learn_container .learn_header p{
+    font-size: 14px;
+}

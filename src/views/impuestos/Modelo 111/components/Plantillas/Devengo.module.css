@@ -1,0 +1,54 @@
+.devengo_container{
+    margin: 20px;
+    margin-top: 80px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.devengo_container h2{
+    font-size: 16px;
+    margin-top: 0;
+}
+
+.devengo_container p{
+    margin-bottom: 0;
+    margin-top: 30px;
+    color: #1E0045;
+    font-size: 11px;
+}
+
+.devengo_container .campos{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.devengo_container .campos .sub{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.devengo_container .campos .sub label{
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.devengo_container .campos .sub input{
+    background-color: #F6F3FE;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+}
+
+.devengo_container .campos .sub input:focus{
+    outline: 1px solid blueviolet;
+}
+
+.devengo_container .campos .sub p{
+    margin-top: 5px;
+    margin-bottom: 0;
+}

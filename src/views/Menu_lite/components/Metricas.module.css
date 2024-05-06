@@ -1,0 +1,73 @@
+.metricas_container{
+    flex: 1;
+    background-color: #816eaa;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.metricas_container .metricas_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.metricas_container .metricas_header h2{
+    font-size: 20px;
+}
+
+.metricas_container .metricas_header .header_end{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.metricas_container .metricas_header .header_end h2{
+    font-size: 16px;
+    font-weight: 600;
+    color: #CDA6FF;
+    cursor: pointer;
+}
+
+.metricas_container .metricas_header .header_end svg{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.metricas_container .metricas_body{
+    display: flex;
+    flex-direction: row;
+}
+
+.metricas_container .metricas_body .body_group{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    flex: 1;
+    line-height: 0px;
+    padding: 20px;
+}
+
+#right_group{
+    border-left: 2px solid white;
+}
+
+.metricas_container .metricas_body .body_group h4{
+    color: #E1D3FF;
+    font-size: 16px;
+    margin: 0;
+}
+
+.metricas_container .metricas_body .body_group p{
+    color: #E1D3FF;
+    font-size: 14px;
+    margin: 0;
+}
+
+.metricas_container .metricas_body .body_group h3{
+    font-size: 24px;
+    font-weight: bolder;
+    margin: 0;
+}

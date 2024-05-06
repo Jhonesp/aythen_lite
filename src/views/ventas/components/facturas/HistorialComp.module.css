@@ -1,0 +1,40 @@
+.historial_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.historial_container .inicio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.historial_container .inicio svg{
+    font-size: 20px;
+    color: #701BDD;
+}
+
+.historial_container .sub{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    gap: 5px;
+}
+
+.historial_container .sub h4,
+.historial_container .sub p{
+    margin: 0;
+}
+
+.historial_container .sub h4{
+    font-size: 14px;
+}
+
+.historial_container .sub p{
+    color: #979797;
+    font-size: 12px;
+}

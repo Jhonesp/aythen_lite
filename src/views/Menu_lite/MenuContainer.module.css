@@ -1,0 +1,13 @@
+*{
+    color: #fff;
+    font-family: "Inter", sans-serif;
+}
+
+.container{
+    width: 683px;
+    background-color: #6c50a5;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

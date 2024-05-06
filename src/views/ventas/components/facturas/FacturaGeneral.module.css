@@ -1,0 +1,272 @@
+.factura_container{
+    position: fixed;
+    right: 0;    
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 400px;
+    
+    height: 90vh;
+    overflow-y: auto;
+}
+
+.factura_container::-webkit-scrollbar{
+    display: none;
+}
+
+.factura_container .botones{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    gap: 10px;
+}
+
+.factura_container .botones button{
+    flex: 1;
+    color: #656565;
+    font-family: 'Inter';
+    background-color: #fff;
+    border-radius: 4px;
+    border: 1px solid #D6D6D6;
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.factura_container .botones .activo{
+    background-color: #701BDD;
+    color: #FAFAFA;
+}
+
+.categoria{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    border-top: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
+    padding: 15px 0;
+}
+
+.subtotal{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.subtotal p,
+.subtotal h5{
+    margin: 0;
+    font-size: 14px;
+}
+
+.subtotal h6{
+    margin: 0;
+}
+
+.subtotal p{
+    font-weight:600 ;
+}
+
+.subtotal h5{
+    font-weight: 700;
+}
+
+.morado{
+    color: #701BDD;
+    cursor: pointer;
+}
+
+.total{
+    color: #C89DFF;
+}
+
+.subtotal select{
+    background-color: #FDE18E;
+    color: #CC9900;
+    padding: 3px;
+    border-radius: 4px;
+    font-weight: 700;
+    border: none;
+}
+
+.subtotal .factura{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.subtotal .factura p{
+    background-color: #FDE18E;
+    color: #CC9900;
+    padding: 5px;
+    border-radius: 4px;
+    font-weight: 700;
+}
+
+#cuenta_contable{
+    background-color: #D9D9D9;
+    color: #828282;
+    padding: 4px;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+#funcionalidad{
+    color: #979797;
+    font-size: 12px;
+}
+
+.archivo{
+    display: flex;    
+    flex: 1;
+    padding: 10px;
+    margin: 10px;
+    color: #979797;
+    justify-content: center;
+    border: 1px dotted #979797;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.imagen{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.imagen img{
+    width: 50%;
+}
+
+.imagen h4{
+    color: #701BDD;
+    font-weight: 800;
+    margin: 0;
+}
+
+.imagen p{
+    color: #515151;
+    font-size: 12px;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #D9D9D9;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.mensaje textarea{
+    font-family: 'Inter';
+    font-weight: 700;
+    padding: 10px;
+    border: none;
+    resize: none;
+    margin-bottom: 20px;
+}
+
+.mensaje textarea:focus{
+    border: none;
+    outline: none;
+}
+
+.mensaje button{
+    color: #fff;
+    font-family: 'Inter';
+    font-weight: 600;
+    background-color: #701BDD;
+    border-radius: 4px;
+    border: 1px solid #D6D6D6;
+    padding: 7px 10px;
+    cursor: pointer;
+}
+
+.mensaje button:active{
+    background-color: #fff;
+    color: #515151;
+}
+
+/*----*/
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 33px;
+    height: 17px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 13px;
+    width: 13px;
+    left: 2px;
+    bottom: 2.3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #701BDD;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #701BDD;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(17px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .nota_interna{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .nota_interna p{
+    color: #656565;
+  }
+  
+  #noti{
+    margin: 0 10px;
+    color: #979797;
+    font-size: 12px;
+  }

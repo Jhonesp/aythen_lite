@@ -1,0 +1,25 @@
+.info_container{
+    display: flex;
+    flex-direction: row;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    gap: 10px;
+}
+
+.info_container .campo{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.info_container .campo label{
+    font-weight: 700;
+}
+
+.info_container .campo select{
+    padding: 10px;
+    border-radius: 4px;
+    background-color: #F6F3FE;
+    border: none;
+}

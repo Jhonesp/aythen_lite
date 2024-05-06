@@ -1,0 +1,29 @@
+.factura_container{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 10px;
+}
+
+.factura_container .factura_group{
+    border-radius: 4px;
+    background-color: white;
+    min-height: 110px;
+    flex: 1;
+}
+
+.factura_container .factura_end{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #9C8FB7;
+    max-width: 137px;
+    cursor: pointer;
+}
+
+.factura_container .factura_end p{
+    color: #D4B2FF;
+    font-weight: 700;
+}

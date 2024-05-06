@@ -1,0 +1,44 @@
+.advise_container{
+    width: 643px;
+    background-color: #816eaa;
+    border-radius: 4px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.advise_container h2{
+    margin: 5px 0;
+    font-size: 20px;
+}
+
+.advise_container p{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.advise_bottom{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.advise_bottom button{
+    background-color: #701BDD;
+    color: #E7E7E7;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    min-height: 38px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.advise_bottom h3{
+    color: #CDA6FF;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}

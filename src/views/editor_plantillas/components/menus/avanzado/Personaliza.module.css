@@ -1,0 +1,36 @@
+.personaliza_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.personaliza_container img{
+    max-width: 300px;
+    border-radius: 6px;
+}
+
+.personaliza_container h2{
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+.personaliza_container p{
+    margin: 10px;
+    font-size: 15px;
+}
+
+.personaliza_container button{
+    background-color: #701BDD;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    padding: 10px;
+    min-width: 120px;
+    font-family: 'Inter';
+    font-weight: 600;
+    margin: 10px 0;
+    cursor: pointer;
+}

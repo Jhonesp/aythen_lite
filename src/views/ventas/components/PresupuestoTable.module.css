@@ -1,0 +1,26 @@
+.table_container{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.table_container .table_header{
+    background-color: #DBDBDB;
+    display: flex;
+    flex-direction: row;
+    border-radius: 8px 8px 0 0;
+    padding-left: 80px;
+}
+
+.table_container .table_header p{
+    flex: 1;
+    color: #464646;
+    font-size: calc(1vw + 0.3vh);
+}
+
+.table_container .table_rows{
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+}
+

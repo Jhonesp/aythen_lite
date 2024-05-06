@@ -1,0 +1,49 @@
+.infoproducto_container{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+
+.infoproducto_container h3{
+    margin: 0;
+    font-size: 16px;
+}
+
+.infoproducto_container p{
+    font-size: 14px;
+}
+
+.infoproducto_container .checks{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.infoproducto_container .checks .check {
+    display: flex;
+    align-items: center;
+}
+
+.infoproducto_container .checks .check label{
+    font-size: 12px;
+}
+
+.infoproducto_container .checks input[type="checkbox"] {
+    box-sizing: border-box;
+    width: 17px;
+    height: 17px;
+    padding: 0;
+    border: 2px solid #D9D9D9;
+    border-radius: 2px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    transition: outline 0.1s;
+    margin-right: 7px;
+}
+.infoproducto_container .checks input[type="checkbox"]:checked {
+    background-size: cover;
+    padding: 2px;
+    border-color: #D9D9D9;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 32 32" xml:space="preserve"><path style="fill: %23274c77" d="M11.941,28.877l-11.941-11.942l5.695-5.696l6.246,6.246l14.364-14.364L32,8.818"/></svg>');
+}
