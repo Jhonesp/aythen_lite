@@ -78,3 +78,8 @@
     background-color: #F6F3FE;
     margin-bottom: 10px;
 }
+
+.ventana{
+    display: flex;
+    overflow: auto;
+}

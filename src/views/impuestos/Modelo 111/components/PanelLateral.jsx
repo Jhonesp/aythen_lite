@@ -3,6 +3,8 @@ import styles from './PanelLateral.module.css'
 import Declarante from './Plantillas/Declarante';
 import Devengo from './Plantillas/Devengo';
 import Liquidacion from './Plantillas/Liquidacion';
+import Negativa from './Plantillas/Negativa';
+import Complementaria from './Plantillas/Complementaria';
 
 const PanelLateral = () => {
   const [active, setActive] = useState();
@@ -51,6 +53,12 @@ const PanelLateral = () => {
       )}
       {active === 3 && (
         <Liquidacion />
+      )}
+      {active === 4 && (
+        <Negativa />
+      )}
+      {active === 5 && (
+        <Complementaria />
       )}
     </div>
     </div>
