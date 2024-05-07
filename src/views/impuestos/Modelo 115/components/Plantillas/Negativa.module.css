@@ -1,0 +1,28 @@
+.negativa_container{
+    margin: 20px;
+    margin-top: 80px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: fit-content;
+}
+
+.negativa_container h3{
+    margin: 0;
+}
+
+.negativa_container p{
+    font-size: 12px;
+    margin: 0;
+    color: #1E0045;
+}
+
+.liquidacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 10px;
+}
+

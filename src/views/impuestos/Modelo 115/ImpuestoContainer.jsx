@@ -3,7 +3,7 @@ import styles from './ImpuestoContainer.module.css'
 import Header from './Header'
 import PanelLateral from './components/PanelLateral'
 
-const Impuesto111Container = () => {
+const Impuesto115Container = () => {
   return (
     <div className={styles.impuesto_container}>
         <Header />
@@ -12,4 +12,4 @@ const Impuesto111Container = () => {
   )
 }
 
-export default Impuesto111Container
+export default Impuesto115Container
