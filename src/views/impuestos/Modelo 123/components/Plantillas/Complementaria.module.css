@@ -1,0 +1,65 @@
+.complementaria_container{
+    margin: 20px;
+    margin-top: 80px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: fit-content;
+}
+
+.complementaria_container h3{
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.complementaria_container p{
+    margin: 0;
+    margin-top: 5px;
+    font-size: 13px;
+    color: #5A5A5A;
+    font-weight: 700;
+}
+
+.complementaria_container .categoria{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px 0;
+    border-top: 1px solid #DBDBDB;
+    border-bottom: 1px solid #DBDBDB;
+    gap: 10px;
+}
+
+.complementaria_container .categoria h4{
+    margin: 0;
+    font-size: 14px;
+    color: #181818;
+}
+
+.complementaria_container .categoria .sub{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 10px 0;
+}
+
+.complementaria_container .categoria .sub input[type='text']{
+    background-color: #F6F3FE;
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+}
+
+.complementaria_container .categoria input[type="checkbox"]{
+    margin-left: 200px;
+}
+
+#end{
+    margin-top: 20px;
+    font-size: 12px;
+    color: #1E0045;
+    font-weight: 400;
+}
