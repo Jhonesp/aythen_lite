@@ -1,0 +1,86 @@
+.liquidacion_container{
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 73vw;
+    height: fit-content;
+}
+
+.liquidacion_container h2{
+    margin: 0;    
+    font-size: 16px;
+}
+
+.liquidacion_container .categorias{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.liquidacion_container .categorias .top{
+    background-color: #F0F0F0;
+    flex: 1;
+}
+
+.liquidacion_container .categorias .top p{
+    font-weight: 700;
+    font-size: 12px;
+    color: #717171;
+    margin-left: 20px;
+}
+
+.liquidacion_container .categorias .division{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #DBDBDB;    
+    padding: 7px 10px;
+}
+
+.liquidacion_container .categorias .sub{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.liquidacion_container .categorias .sub .subtitulo{
+    font-weight: 700;
+    font-size: 12px;
+    color: #717171;
+}
+
+.liquidacion_container .categorias .sub .subcampos{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#justificante{
+    background-color: #F6F3FE;
+    border-radius: 4px;
+    border: none;
+    padding: 0 10px;
+}
+
+.liquidacion_container .categorias .sub .check{
+    display: flex;
+    flex-direction: row;
+}
+
+.liquidacion_container .categorias .sub .subsub{
+    color: #5A5A5A;
+    margin-left: 30px;
+}
+
+.liquidacion_container .categorias .sub span{
+    color: #484646;
+}
+
+#end{
+    color: #1E0045;
+    font-size: 12px;
+}
