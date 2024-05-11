@@ -1,0 +1,40 @@
+.saldo_container{
+    margin: 20px;
+    margin-top: 80px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    height: fit-content;
+}
+
+.saldo_container .campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.saldo_container .campo label{
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.saldo_container .campo input{
+    background-color: #F6F3FE;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    font-family: 'Inter';
+    text-align: right;
+}
+
+.saldo_container p{
+    margin: 0;
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.saldo_container h4{
+    margin: 0;
+    margin-bottom: 20px;
+}

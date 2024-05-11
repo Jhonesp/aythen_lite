@@ -1,0 +1,26 @@
+
+.campo{
+    display: flex;
+    flex-direction: column;
+}
+
+.campo p{
+    margin: 3px 0;
+    font-size: 12px;
+    font-weight: 700;
+    color: #1E0045;
+}
+
+.campo .subcampo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.campo .subcampo input{
+    padding: 15px 10px;
+    text-align: right;
+    background-color: #F6F3FE;
+    border-radius: 0 6px 6px 0;
+    border: none;
+}

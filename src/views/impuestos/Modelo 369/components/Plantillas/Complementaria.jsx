@@ -39,7 +39,7 @@ Cuando  la presentación de esta declaración tenga por objeto anular y sustitui
           <div className={styles.sub}>
             <p className={styles.subtitulo}>Número identificativo de la declaración anterior</p>
             <div className={styles.subcampos}>
-              <input type="text" id={styles.input}/>
+              <input type="text" />
             </div>
           </div>
           </div>

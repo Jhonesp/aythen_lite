@@ -11,7 +11,7 @@ const Header = () => {
                     <CloseIcon />
                 </div>
                 <div className={styles.plantilla_name}>
-                    <p>Modelo 349 trimestral - 1T 2024</p>
+                    <p>Modelo 369 trimestral - 1T 2024</p>
                 </div>
             </div>
             <div className={styles.header_final}>

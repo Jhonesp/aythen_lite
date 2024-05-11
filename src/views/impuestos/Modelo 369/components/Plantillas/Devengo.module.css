@@ -1,4 +1,4 @@
-.declarante_container{
+.devengo_container{
     margin: 20px;
     margin-top: 80px;
     background-color: #fff;
@@ -7,60 +7,49 @@
     flex-direction: column;
     padding: 20px;
     height: fit-content;
-    width: 70vw;
 }
 
-.declarante_container h2{
+.devengo_container h2{
     font-size: 16px;
     margin-top: 0;
 }
 
-.declarante_container p{
+.devengo_container p{
     margin-bottom: 0;
     margin-top: 30px;
     color: #1E0045;
     font-size: 11px;
 }
 
-.declarante_container .campos{
+.devengo_container .campos{
     display: flex;
     flex-direction: row;
     gap: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
 }
 
-.declarante_container .campos:last-child{
-    margin-bottom: 0;
-}
-
-.declarante_container .campos .sub{
+.devengo_container .campos .sub{
     display: flex;
     flex-direction: column;
+    width: 25%;
 }
 
-.declarante_container .campos .sub label{
+.devengo_container .campos .sub label{
     font-size: 14px;
     font-weight: 800;
 }
 
-.declarante_container .campos .sub input{
+.devengo_container .campos .sub input{
     background-color: #F6F3FE;
     padding: 10px;
     border-radius: 4px;
     border: none;
 }
 
-.declarante_container .campos .sub input:focus{
+.devengo_container .campos .sub input:focus{
     outline: 1px solid blueviolet;
 }
 
-.declarante_container .campos .sub p{
+.devengo_container .campos .sub p{
     margin-top: 5px;
     margin-bottom: 0;
-}
-
-.small{
-    width: 80px;
-    
 }
