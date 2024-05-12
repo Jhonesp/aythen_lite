@@ -5,12 +5,13 @@ import Impuesto130Container from './views/impuestos/Modelo 130/ImpuestoContainer
 import Impuesto303Container from "./views/impuestos/Modelo 303/ImpuestoContainer"
 import Impuesto349Container from "./views/impuestos/Modelo 349/ImpuestoContainer"
 import Impuesto369Container from "./views/impuestos/Modelo 369/ImpuestoContainer"
+import Impuesto190Container from "./views/impuestos/Modelo 190/ImpuestoContainer"
 
 function App() {
 
   return (
     <>
-    <Impuesto369Container />
+    <Impuesto190Container />
     </>
   )
 }
