@@ -9,6 +9,7 @@ import Actions from './components/Actions'
 import Consejos from './components/Consejos'
 import Facturas from './components/Facturas'
 import BankAdd from './components/BankAdd'
+import ScrollBar from './components/ScrollBar'
 
 
 function MenuContainer() {
@@ -16,6 +17,7 @@ function MenuContainer() {
   return (
     <div className={styles.container}>
       <Header />
+      <ScrollBar />
       <DatosNegocio />
       <Plan />
       <Facturas />
