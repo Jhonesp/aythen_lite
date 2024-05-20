@@ -10,14 +10,16 @@ import Consejos from './components/Consejos'
 import Facturas from './components/Facturas'
 import BankAdd from './components/BankAdd'
 import ScrollBar from './components/ScrollBar'
+import { useState } from 'react'
 
 
 function MenuContainer() {
+  let [active, setActive] = useState();
 
   return (
     <div className={styles.container}>
       <Header />
-      <ScrollBar />
+      <ScrollBar actualizarEstado={setActive}/>
       <DatosNegocio />
       <Plan />
       <Facturas />

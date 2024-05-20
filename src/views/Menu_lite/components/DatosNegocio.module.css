@@ -34,7 +34,7 @@
 .Bussiness_container .form .formulario .inputGroup{
     display: flex;
     flex-direction: column;
-    flex: 1 1 0;
+    flex: 1;
 }
 
 .Bussiness_container .form .formulario .group1 {
@@ -45,6 +45,7 @@
 
 .Bussiness_container .form .formulario .group3{
     display: flex;
+    flex: 1;
     flex-direction: row;
     gap: 20px;
 }
@@ -68,6 +69,7 @@
     color: black;
     font-weight: 600;
     padding: 5px;
+    width:100%;max-width:100%;
 }
 
 .Bussiness_container .form .formulario .inputGroup option{
@@ -82,4 +84,5 @@
     color: black;
     font-weight: 600;
     padding: 5px;
+    width:100%;max-width:100%;
 }

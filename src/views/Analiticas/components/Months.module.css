@@ -1,0 +1,22 @@
+.months{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.mes{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mes i{
+    width: 100%;
+    background-color: black;
+    height: 2px;
+}
+
+.mes h5{
+    margin: 0;
+}

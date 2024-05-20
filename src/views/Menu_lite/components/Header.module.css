@@ -1,6 +1,6 @@
 
 .header_container{
-    width: 643px;
+    flex: 1;
     background-color: #816eaa;
     border-radius: 4px;
     padding: 15px;

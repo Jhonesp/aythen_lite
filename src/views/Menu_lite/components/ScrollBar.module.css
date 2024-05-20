@@ -2,15 +2,31 @@
     display: flex;
     flex-direction: row;
     color: #fff;
+    width: 100%;
 }
 
 .boton{
     display: flex;
     flex-direction: column;
+    flex: 1;
+    cursor: pointer;
+}
+
+.boton p{
+    padding: 0 15px;
 }
 
 .boton i{
-    background-color: #fff;
+    background-color: #C6BADC;
     width: 100%;
     height: 4px;
+    min-width: 100%;
+}
+
+.active{
+    font-weight: 700;
+}
+
+.active i{
+    background-color: #fff;
 }
