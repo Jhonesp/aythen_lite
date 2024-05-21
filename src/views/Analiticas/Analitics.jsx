@@ -3,6 +3,8 @@ import styles from './Analitics.module.css'
 import Header from './components/Header'
 import { Icon } from '@iconify/react';
 import Months from './components/Months';
+import CuentasGasto from './components/CuentasGasto';
+import Tarea from './components/Tarea';
 
 const Analitics = () => {
   return (
@@ -161,6 +163,64 @@ const Analitics = () => {
                             <h5>Saldo</h5>
                         </div>
                         <h3>0</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className={styles.seccion_4}>
+            <div className={styles.down} style={{flex:1}}>
+                <div className={styles.sub} style={{maxHeight:"200px"}}>
+                    <div className={styles.distancia}>
+                        <h4>Resumen gastos</h4>
+                        <Icon icon="mingcute:more-2-fill" />
+                    </div>
+                    <p>ULTIMOS 12 MESES</p>
+                    <div className={styles.right} style={{gap: "32.5%"}}>
+                        <h5>Objetivo</h5>
+                        <h5>0,00£</h5>
+                    </div>
+                    <div className={styles.distancia}>
+                        <h4>0,00£</h4>
+                        <h5>-</h5>
+                    </div>
+                    <p>ABRIL 2024</p>
+                    <div className={styles.right}>
+                        <h5>MoM</h5>
+                        <h5>-</h5>
+                    </div>
+                    <Months />
+                </div>
+                <div className={styles.sub}>
+                    <div className={styles.distancia}>
+                        <h4>Mis tareas</h4>
+                        <Icon icon="mingcute:more-2-fill" />
+                    </div>
+                    <p>TODOS LOS PROYECTOS</p>
+                    <div style={{display:"flex",flexDirection:"column",gap:"10px"}}>
+                        <Tarea />
+                    </div>
+                </div>
+            </div>
+            <div className={styles.down} style={{flex:1}}>
+                <div className={styles.sub}>
+                    <div className={styles.distancia}>
+                        <h6>Cuentas de gasto</h6>
+                        <Icon icon="mingcute:more-2-fill" />
+                    </div>
+                    <p>MES ACTUAL</p>
+                    <CuentasGasto />
+                </div>
+                <div style={{display:"flex", flexDirection:"row", gap:"10px"}}>
+                    <div className={`${styles.sub} ${styles.center}`}>
+                        <Icon icon="lets-icons:message" />
+                        <h5>1 Emails no leídos</h5>
+                        <p>Envía facturas y presupuestos por email y podrás saber si han sido leídos.</p>
+                    </div>
+                    <div className={`${styles.sub} ${styles.center}`} style={{justifyContent:"center"}}>
+                        <div style={{display:"flex",flexDirection:"row",alignItems:"center"}}>
+                        <Icon icon="ic:sharp-people-alt" />
+                        <h5>1 Contacto</h5>
+                        </div>
                     </div>
                 </div>
             </div>
