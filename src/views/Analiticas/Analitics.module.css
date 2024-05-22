@@ -211,3 +211,9 @@
 .seccion_4 p, .seccion_4 h2, .seccion_4 h3, .seccion_4 h4, .seccion_4 h5, .seccion_4 h6{
     margin: 0;
 }
+
+.seccion_4 p{
+    font-size: 13px;
+    color: #A6A6A6;
+    font-weight: 700;
+}

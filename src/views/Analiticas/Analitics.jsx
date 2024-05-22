@@ -65,7 +65,7 @@ const Analitics = () => {
             </div>
             <div className={styles.sub}>
             <div className={styles.distancia}>
-                    <h4>Ventas</h4>
+                    <h4>Beneficio</h4>
                     <Icon icon="mingcute:more-2-fill" />
                 </div>
                 <div className={styles.distancia}>
@@ -78,7 +78,7 @@ const Analitics = () => {
             </div>
             <div className={`${styles.sub} ${styles.center}`} >
                 <Icon icon="ph:bank-bold" />
-                <p>Crea tu primer banco</p>
+                <p style={{fontWeight:"700",color:"#000"}}>Crea tu primer banco</p>
                 <p>Conecta Aythen con tus bancos para relacionar y tener un control máximo de tus movimientos.</p>
             </div>
         </div>
@@ -213,13 +213,13 @@ const Analitics = () => {
                 <div style={{display:"flex", flexDirection:"row", gap:"10px"}}>
                     <div className={`${styles.sub} ${styles.center}`}>
                         <Icon icon="lets-icons:message" />
-                        <h5>1 Emails no leídos</h5>
-                        <p>Envía facturas y presupuestos por email y podrás saber si han sido leídos.</p>
+                        <h5 style={{color:"#000"}}>1 Emails no leídos</h5>
+                        <p style={{color:"#fff", fontWeight:"400"}}>Envía facturas y presupuestos por email y podrás saber si han sido leídos.</p>
                     </div>
                     <div className={`${styles.sub} ${styles.center}`} style={{justifyContent:"center"}}>
                         <div style={{display:"flex",flexDirection:"row",alignItems:"center"}}>
                         <Icon icon="ic:sharp-people-alt" />
-                        <h5>1 Contacto</h5>
+                        <h5 style={{color:"#000"}}>1 Contacto</h5>
                         </div>
                     </div>
                 </div>
