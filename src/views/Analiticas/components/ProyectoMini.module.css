@@ -1,0 +1,41 @@
+.container{
+    width: 50%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.container{
+    color: #1E0045;
+}
+
+.miniatura{
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    background-color: #D1D1D1;
+    padding: 3px;
+    margin-right: 5px;
+}
+
+.miniatura svg{
+    font-size: 30px;
+    color: #4F5660;
+}
+
+.descripcion{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.descripcion p{
+    color: #1E0045;
+    font-size: 12px;
+}
+
+.descripcion svg{
+    color: #1E0045;
+}
