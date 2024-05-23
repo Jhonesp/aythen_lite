@@ -4,6 +4,8 @@
     flex-wrap: wrap;
     width: 100%;
     gap: 10px;
+    height: 82vh;
+    background: linear-gradient(90deg, rgba(86,44,168,1) 0%, rgba(71,36,143,1) 35%, rgba(56,27,117,1) 72%, rgba(24,10,64,1) 100%);
 }
 
 .sub{
@@ -15,6 +17,7 @@
     padding: 15px;
     gap: 10px;
     min-width: 40%;
+    margin: 0 5px 10px 5px;
 }
 
 .distancia{

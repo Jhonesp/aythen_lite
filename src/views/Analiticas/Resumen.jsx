@@ -7,7 +7,7 @@ import Tarea from './components/Tarea';
 
 const Resumen = () => {
   return (
-    <div>
+    <div className={styles.container}>
         <div className={styles.seccion_2}>
             <div className={styles.sub}>
                 <div className={styles.distancia}>
