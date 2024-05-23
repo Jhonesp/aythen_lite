@@ -8,12 +8,13 @@ import Impuesto369Container from "./views/impuestos/Modelo 369/ImpuestoContainer
 import Impuesto190Container from "./views/impuestos/Modelo 190/ImpuestoContainer"
 import MenuContainer from "./views/Menu_lite/MenuContainer"
 import Analitics from "./views/Analiticas/Analitics"
+import ContabilidadContainer from "./views/Contabilidad/ContabilidadContainer"
 
 function App() {
 
   return (
     <>
-    <Analitics />
+    <ContabilidadContainer />
     </>
   )
 }

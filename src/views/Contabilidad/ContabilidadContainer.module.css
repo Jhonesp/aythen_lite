@@ -1,0 +1,88 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.topbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #614992;
+    height: 45px;
+    align-items: center;
+    user-select: none;
+    margin: 10px 0;
+}
+
+.mostrar{
+    display: flex;
+    align-items: center;
+    background-color: #F6F3FE;
+    border-radius: 4px;
+    max-height: 80%;
+    padding: 0 10px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.mostrar p{
+    color: #701BDD;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.search{
+    display: flex;
+    align-items: center;
+}
+
+.search svg{
+    color: #8943E3;
+    position: relative;
+    left: 25px;
+    font-size: 18px;
+}
+
+.search input{
+    border-radius: 4px;
+    border: none;
+    padding: 8px;
+    font-family: 'Inter';
+}
+
+.fecha{
+    display: flex;
+    align-items: center;
+}
+
+.fecha svg{
+    color: #701BDD;
+    position: relative;
+    left: 25px;
+    font-size: 20px;
+}
+
+.fecha select{
+    padding: 8px;
+    padding-left: 25px;
+    border-radius: 4px;
+    color: #701BDD;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.download{
+    background-color: #E2D1F8;
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    border-radius: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.download svg{
+    color: #701BDD;
+    font-size: 20px;
+}
