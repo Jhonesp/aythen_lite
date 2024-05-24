@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './ContabilidadContainer.module.css'
 import Header from './components/Header'
 import { Icon } from '@iconify/react';
+import LibroCuentas from './LibroCuentas';
 
 const ContabilidadContainer = () => {
   return (
@@ -26,6 +27,9 @@ const ContabilidadContainer = () => {
                     <Icon icon="icons8:download-2" />
                 </div>
             </div>
+        </div>
+        <div className={styles.libro}>
+            <LibroCuentas />
         </div>
     </div>
   )

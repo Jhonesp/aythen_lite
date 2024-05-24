@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 120px;
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    background-color: #FCFCFD;
+    border-radius: 4px 4px 0 0;
+}
+
+.topsub{
+    display: flex;
+    flex: 1;
+    color: #667085;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 8px 5px;
+}
