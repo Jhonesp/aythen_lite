@@ -65,6 +65,61 @@ const LibroCuentas = () => {
           <Campo color={"#691D79"} cuenta={30000000} nombre={"Mercaderías A"} grupo={"Existencias"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
           <Campo color={"#BFEA01"} cuenta={31000000} nombre={"Materias primas A"} grupo={"Existencias"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
           <Campo color={"#C7ABB0"} cuenta={32500000} nombre={"Materiales diversos"} grupo={"Existencias"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          {/*Pagina 2 */}
+          <Campo color={"#98FB8E"} cuenta={32600000} nombre={"Embalajes"} grupo={"Existencias"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#1B72D7"} cuenta={32700000} nombre={"Envases"} grupo={"Existencias"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#29DCEE"} cuenta={32800000} nombre={"Material de oficina"} grupo={"Existencias"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#A0F81F"} cuenta={33000000} nombre={"Productos en curso A"} grupo={"Existencias"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#262BA9"} cuenta={34000000} nombre={"Productos semiterminados A"} grupo={"Existencias"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#C27C28"} cuenta={35000000} nombre={"Productos terminados A"} grupo={"Existencias"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#99B915"} cuenta={39000000} nombre={"Deterioro de valor de las mercaderías"} grupo={"Existencias"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#016BA3"} cuenta={39100000} nombre={"Deterioro de valor de las materias primas"} grupo={"Existencias"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#431DA6"} cuenta={39200000} nombre={"Deterioro de valor de otros aprovisionamiento"} grupo={"Existencias"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#8CF1C9"} cuenta={40000000} nombre={"Proveedores euros"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#F8E660"} cuenta={40040000} nombre={"Proveedores moneda extranjera"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#05D168"} cuenta={40090000} nombre={"Proveedores, facturas pendientes de recibir o formalizar"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#5EA1DA"} cuenta={40100000} nombre={"Proveedores, efectos comerciales a pagar"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#C7A04C"} cuenta={41000000} nombre={"Acreedores por prestaciones de servicios (euros)"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#5C3CF9"} cuenta={41040000} nombre={"Acreedores por prestaciones de servicios (moneda extranjera)"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#AA7B4A"} cuenta={41090000} nombre={"Acreedores por prestaciones de servicios, facturas pendientes de recibo"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#FEEC09"} cuenta={41100000} nombre={"Acreedores, efectos comerciales a pagar"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#322E70"} cuenta={43000000} nombre={"Clientes"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#8B7009"} cuenta={43040000} nombre={"Clientes (moneda extranjera)"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#95EF66"} cuenta={43080000} nombre={"Clientes, retenciones por garantía"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#812FB0"} cuenta={43090000} nombre={"Clientes, factura pendientes de formalizar"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#11AB15"} cuenta={43100000} nombre={"Efectos comerciales en cartera"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#CF1FF6"} cuenta={43200000} nombre={"Clientes, operaciones de factoring"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#28E50E"} cuenta={44000000} nombre={"Deudores (euros)"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#D4A82F"} cuenta={44040000} nombre={"Deudores (moneda extranjera)"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#0DBED3"} cuenta={44090000} nombre={"Deudores, facturas pendientes de formalizar"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#F59E45"} cuenta={44100000} nombre={"Deudores, efectos comerciales en cartera"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#4E7E5A"} cuenta={44600000} nombre={"Deudores de dudoso cobro"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#965CE2"} cuenta={46000000} nombre={"Anticipos de remuneraciones"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#0B7369"} cuenta={46500000} nombre={"Remuneraciones pendientes de pago"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#900A58"} cuenta={46600000} nombre={"Remuneraciones mediante sistemas de aportación definida pendientes de pago"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#BA55B6"} cuenta={47000000} nombre={"Hacienda Pública, deudora por IVA"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#39F102"} cuenta={47100000} nombre={"Organismos de la Seguridad Social, deudores"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#2ED6C4"} cuenta={47200000} nombre={"Hacienda Pública, IVA soportado"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#28ABB4"} cuenta={47300000} nombre={"Haciendo Pública, retenciones y pago a cuenta"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#96ECDD"} cuenta={47500000} nombre={"Haciendo Pública, acreedora por IVA"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#8DC993"} cuenta={47510000} nombre={"Hacienda Pública, acreedora por retenciones practicadas"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#8C14A9"} cuenta={47520000} nombre={"Hacienda Pública, acreedora por impuesto sobre sociedades"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#8E7323"} cuenta={47600000} nombre={"Organismos de la Seguridad Social, acreedores"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#394F04"} cuenta={47700000} nombre={"Hacienda Pública, IVA repercutido"} grupo={"Clientes y proveedores"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#4C2439"} cuenta={52000000} nombre={"Préstamos a corto plazo de entidades de crédito"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#DBCC84"} cuenta={52090000} nombre={"Deudas por operaciones de factoring"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#6B4860"} cuenta={52100000} nombre={"Deudas a corto plazo"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#4EB03C"} cuenta={52300000} nombre={"Proveedores de inmovilizado a corto plazo"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#90FC80"} cuenta={52400000} nombre={"Acreedores por arrendamiento financiero a corto plazo"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#E7276E"} cuenta={52500000} nombre={"Efecto a pagar a corto plazo"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#2D486F"} cuenta={52700000} nombre={"Intereses a corto plazo de deudas con entidades de crédito"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#2A2682"} cuenta={52800000} nombre={"Intereses a corto plazo de deudas"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#2035ED"} cuenta={54200000} nombre={"Créditos a corto plazo"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          {/*Pagina 3*/}
+          <Campo color={"#4C2439"} cuenta={32500000} nombre={"Materiales"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#4C2439"} cuenta={32500000} nombre={"Materiales"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#4C2439"} cuenta={32500000} nombre={"Materiales"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+
         </div>
     </div>
   )
