@@ -116,9 +116,42 @@ const LibroCuentas = () => {
           <Campo color={"#2A2682"} cuenta={52800000} nombre={"Intereses a corto plazo de deudas"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
           <Campo color={"#2035ED"} cuenta={54200000} nombre={"Créditos a corto plazo"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
           {/*Pagina 3*/}
-          <Campo color={"#4C2439"} cuenta={32500000} nombre={"Materiales"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
-          <Campo color={"#4C2439"} cuenta={32500000} nombre={"Materiales"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
-          <Campo color={"#4C2439"} cuenta={32500000} nombre={"Materiales"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#5F16C0"} cuenta={54400000} nombre={"Créditos a corto plazo al personal"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#027222"} cuenta={54700000} nombre={"Intereses a corto plazo de créditos"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#FE567B"} cuenta={55100000} nombre={"Cuenta corriente con socios y administradores"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#001FF9"} cuenta={55500000} nombre={"Partidas pendientes de aplicación"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#4F9C5A"} cuenta={56000000} nombre={"Fianzas recibidas a corto plazo"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#314C33"} cuenta={56100000} nombre={"Depósitos recibidos a corto plazo"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#72CFB3"} cuenta={56500000} nombre={"Fianzas constituidas a corto plazo"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#79351A"} cuenta={56600000} nombre={"Depósitos constituidos a corto plazo"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#340BC9"} cuenta={57000000} nombre={"Caja, euros"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#CB3A32"} cuenta={57200000} nombre={"Bancos, euros"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#F3D390"} cuenta={57400000} nombre={"Bancos, cuentas de ahorro, euros"} grupo={"Cuentas financieras"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#60E3B4"} cuenta={60000000} nombre={"Compras de mercadería"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#8AE9D7"} cuenta={60100000} nombre={"Compras de materias primas"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#0823DF"} cuenta={60200000} nombre={"Compras de otros aprovisionamientos"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#2F70DA"} cuenta={61000000} nombre={"Variación de existencias de mercaderías"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#C4E112"} cuenta={62000000} nombre={"Gastos en investigación y desarrollo del ejercicio"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#9E7E1F"} cuenta={62100000} nombre={"Arrendamiento y cánones"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#6C0E0C"} cuenta={62200000} nombre={"Reparaciones y conservación"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#9F06B2"} cuenta={62300000} nombre={"Servicios de profesionales independientes"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#366155"} cuenta={62400000} nombre={"Transportes"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#76AF3D"} cuenta={62500000} nombre={"Primas de seguros"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#19FA22"} cuenta={62600000} nombre={"Servicios bancarios y similares"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#A17AFA"} cuenta={62700000} nombre={"Publicidad, propaganada y relaciones públicas"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#DE7E95"} cuenta={62800000} nombre={"Suministros"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#6ABE75"} cuenta={62900000} nombre={"Otros servicios"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#30EEF5"} cuenta={64000000} nombre={"Sueldos y salarios"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#214857"} cuenta={64100000} nombre={"Indemnizaciones"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#22B971"} cuenta={64200000} nombre={"Seguridad Social a cargo de la empresa"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#A86CE5"} cuenta={65900000} nombre={"Otras pérdidas en gestión corriente"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#D7F9A9"} cuenta={67800000} nombre={"Gastos excepcionales"} grupo={"Compras y gastos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#304106"} cuenta={70000000} nombre={"Ventas de mercaderías"} grupo={"Ventas e ingresos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#980910"} cuenta={70500000} nombre={"Prestaciones de servicios"} grupo={"Ventas e ingresos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#EB7890"} cuenta={70800000} nombre={"Devoluciones de ventas de mercaderías"} grupo={"Ventas e ingresos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#0FC513"} cuenta={75200000} nombre={"Ingreso por arrendamiento"} grupo={"Ventas e ingresos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#47CD66"} cuenta={75400000} nombre={"Ingresos por comisiones"} grupo={"Ventas e ingresos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
+          <Campo color={"#609104"} cuenta={75900000} nombre={"Ingresos por servicios diversos"} grupo={"Ventas e ingresos"} debe={"0,00"} haber={"0,00"} saldo={"0,00"}/>
 
         </div>
     </div>
