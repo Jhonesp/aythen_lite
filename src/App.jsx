@@ -9,12 +9,13 @@ import Impuesto190Container from "./views/impuestos/Modelo 190/ImpuestoContainer
 import MenuContainer from "./views/Menu_lite/MenuContainer"
 import Analitics from "./views/Analiticas/Analitics"
 import ContabilidadContainer from "./views/Contabilidad/ContabilidadContainer"
+import AnaliticaInformes from "./views/Analitica - Informes/AnaliticaInformes"
 
 function App() {
 
   return (
     <>
-    <ContabilidadContainer />
+    <AnaliticaInformes />
     </>
   )
 }
