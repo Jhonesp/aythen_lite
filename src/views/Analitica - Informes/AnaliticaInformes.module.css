@@ -115,17 +115,11 @@
 }
 
 .panel_expansion{
-    background-color: #694DA0;
-    width: 270px;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    border-radius: 0 8px 8px 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    scrollbar-width: none;
-    transform: translateX(0);
-    transition: transform 250ms ease-in-out;
+    width: 100%;
+    height: 100%;
+    padding: 20px 10px 20px 20px;
 }
 
 .active {

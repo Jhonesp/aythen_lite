@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import { Icon } from '@iconify/react';
 import styles from './AnaliticaInformes.module.css'
+import Header from './components/Header';
 
 const AnaliticaInformes = () => {
     const [isActive, setIsActive] = useState(false);
@@ -9,7 +10,7 @@ const AnaliticaInformes = () => {
         setMostrarOpciones] = useState('');
 
     const [expandir,
-        setExpandir] = useState(false);
+        setExpandir] = useState(true);
     const toggleExpand = () => {
         setExpandir(!expandir);
     }
@@ -242,8 +243,8 @@ const AnaliticaInformes = () => {
     
             </div>
             {expandir && (
-                <div className={`${styles.panel_expansion} ${isActive ? styles.active : ''}`}>
-                    {contenido}
+                <div className={`${styles.panel_expansion}`}>
+                    <Header />
                 </div>
             )}
         </div>
