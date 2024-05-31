@@ -1,0 +1,83 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 1px;
+}
+
+#botonRight{
+    display: flex;
+    align-items: center;
+    border: 1px solid #EDEDED;
+    border-radius: 0 4px 4px 0;
+    padding: 3px 15px;
+    cursor: pointer;
+    color: #701BDD;
+}
+
+#botonLeft{
+    display: flex;
+    align-items: center;
+    border: 1px solid #EDEDED;
+    border-radius: 4px 0 0 4px;
+    padding: 3px 15px;
+    cursor: pointer;
+    color: #701BDD;
+}
+
+.graph{
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.num{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.num p{
+    display: flex;
+    justify-content: center;
+    color: #474747;
+    font-size: 12px;
+    text-align: center;
+    width: 40px;
+}
+
+.linea{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    justify-content: center;
+    border-left: 2px solid #B0B0B0;
+}
+
+.num .linea i{
+    height: 1px;
+    width: 100%;
+    background-color: #B0B0B0;
+}
+
+.meses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mes{
+    margin: 0;
+    color: #474747;
+    font-size: 12px;
+}

@@ -1,0 +1,16 @@
+.campo{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.titulo{
+    flex: 1.4;
+    background-color: #EAECF0;
+    padding-right: 20px;
+}
+
+.sub{
+    text-align: end;
+    flex: 1;
+}

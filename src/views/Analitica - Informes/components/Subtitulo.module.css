@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+}
+
+#titulo{
+    color: #756794;
+    margin: 10px 0;
+    font-size: 14px;
+}
+
+#monto{
+    color: #701BDD;
+    margin: 10px 0;
+    font-weight: 900;
+    font-size: 18px;
+}

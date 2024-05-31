@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { Icon } from '@iconify/react';
 import styles from './AnaliticaInformes.module.css'
-import Header from './components/Header';
+import Ventas from './Views/Ventas';
 
 const AnaliticaInformes = () => {
     const [isActive, setIsActive] = useState(false);
@@ -244,7 +244,7 @@ const AnaliticaInformes = () => {
             </div>
             {expandir && (
                 <div className={`${styles.panel_expansion}`}>
-                    <Header />
+                    <Ventas />
                 </div>
             )}
         </div>
