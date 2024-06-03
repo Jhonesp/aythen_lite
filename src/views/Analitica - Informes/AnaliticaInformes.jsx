@@ -2,6 +2,10 @@ import React, {useState} from 'react'
 import { Icon } from '@iconify/react';
 import styles from './AnaliticaInformes.module.css'
 import Ventas from './Views/Ventas';
+import Presupuestos from './Views/Presupuestos';
+import Compras from './Views/Compras';
+import Gastos from './Views/Gastos';
+import EntradasSalidas from './Views/EntradasSalidas';
 
 const AnaliticaInformes = () => {
     const [isActive, setIsActive] = useState(false);
@@ -35,20 +39,20 @@ const AnaliticaInformes = () => {
         setIsActive(false);
 
         switch (componente) {
-            case 'Plantilla':
-                setContenido(<Plantilla/>);
+            case 'Ventas':
+                setContenido(<Ventas/>);
                 break;
-            case 'Logo':
-                setContenido(<Logo/>);
+            case 'Presupuesto':
+                setContenido(<Presupuestos/>);
                 break;
-            case 'Personalizar':
-                setContenido(<Personalizar/>);
+            case 'Compras':
+                setContenido(<Compras/>);
                 break;
-            case 'Campos':
-                setContenido(<Campos/>);
+            case 'Gastos':
+                setContenido(<Gastos/>);
                 break;
-            case 'Detalles':
-                setContenido(<Detalles/>);
+            case 'EntradasSalidas':
+                setContenido(<EntradasSalidas/>);
                 break;
             case 'Tabla':
                 setContenido(<Tabla/> );
@@ -94,10 +98,10 @@ const AnaliticaInformes = () => {
                     </div>
                     {mostrarOpciones === 'Ventas' && (
                         <div className={styles.subopciones}>
-                            <div className={styles.sub}>
+                            <div className={styles.sub} onClick={()=> {handleClick('Ventas')}}>
                                 <p>Ventas</p>
                             </div>
-                            <div className={styles.sub}>
+                            <div className={styles.sub} onClick={()=> {handleClick('Presupuesto')}}>
                                 <p>Presupuestos</p>
                             </div>
                             <div className={styles.sub}>
@@ -120,10 +124,10 @@ const AnaliticaInformes = () => {
                     </div>
                     {mostrarOpciones === 'Compras' && (
                         <div className={styles.subopciones}>
-                            <div className={styles.sub}>
+                            <div className={styles.sub} onClick={()=> {handleClick('Compras')}}>
                                 <p>Compras</p>
                             </div>
-                            <div className={styles.sub}>
+                            <div className={styles.sub} onClick={()=> {handleClick('Gastos')}}>
                                 <p>Gastos</p>
                             </div>
                             <div className={styles.sub}>
@@ -158,7 +162,7 @@ const AnaliticaInformes = () => {
                                 <p>Sumas y saldos</p>
                                 <Icon icon="heroicons:sparkles-solid" />
                             </div>
-                            <div className={styles.sub}>
+                            <div className={styles.sub} onClick={()=> {handleClick('EntradasSalidas')}}>
                                 <p>Entradas y salidas de banco</p>
                             </div>
                             <div className={styles.sub}>
@@ -244,7 +248,7 @@ const AnaliticaInformes = () => {
             </div>
             {expandir && (
                 <div className={`${styles.panel_expansion}`}>
-                    <Ventas />
+                    {contenido}
                 </div>
             )}
         </div>
