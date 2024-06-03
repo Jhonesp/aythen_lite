@@ -6,6 +6,7 @@ const Campo = ({titulo, color}) => {
     <div className={styles.campo}>
         <div className={styles.titulo}>
             <p>{titulo}</p>
+            <div className={styles.color} style={{backgroundColor: color}}></div>
         </div>
         <div className={styles.sub}>
             0,00
