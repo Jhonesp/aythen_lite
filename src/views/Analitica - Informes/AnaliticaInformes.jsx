@@ -6,6 +6,7 @@ import Presupuestos from './Views/Presupuestos';
 import Compras from './Views/Compras';
 import Gastos from './Views/Gastos';
 import EntradasSalidas from './Views/EntradasSalidas';
+import LibroFacturas from './Views/LibroFacturas';
 
 const AnaliticaInformes = () => {
     const [isActive, setIsActive] = useState(false);
@@ -54,8 +55,8 @@ const AnaliticaInformes = () => {
             case 'EntradasSalidas':
                 setContenido(<EntradasSalidas/>);
                 break;
-            case 'Tabla':
-                setContenido(<Tabla/> );
+            case 'LibroFactura':
+                setContenido(<LibroFacturas/> );
                 break;
             case 'Campos legales':
                 setContenido(<CamposLegales/> );
@@ -112,7 +113,7 @@ const AnaliticaInformes = () => {
                                 <p>Pedidos de venta</p>
                                 <Icon icon="heroicons:sparkles-solid" />
                             </div>
-                            <div className={styles.sub}>
+                            <div className={styles.sub} onClick={()=> {handleClick('LibroFactura')}}>
                                 <p>Libro Facturas emitidas</p>
                             </div>
                         </div>
