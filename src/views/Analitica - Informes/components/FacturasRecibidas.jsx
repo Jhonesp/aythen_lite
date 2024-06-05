@@ -1,5 +1,8 @@
 import React from 'react'
 import styles from './FacturasRecibidas.module.css'
+import FacturaCampo from './FacturaCampo'
+import { Icon } from '@iconify/react';
+import FacturaRecCampo from './FacturaRecCampo';
 
 const FacturasRecibidas = () => {
   return (
@@ -39,7 +42,7 @@ const FacturasRecibidas = () => {
             Fecha contable 
             </div>
         </div>
-        <FacturaCampo />
+        <FacturaRecCampo />
         <div className={styles.bottom}>
             <div>
                 <p>Showing 1 to 1 of entries</p>
