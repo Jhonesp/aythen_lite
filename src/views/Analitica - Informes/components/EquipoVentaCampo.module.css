@@ -1,0 +1,12 @@
+.campo{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20px;
+}
+
+.sub{
+    flex: 1;
+    text-align: center;
+    color: #667085;
+    font-size: 12px;
+}

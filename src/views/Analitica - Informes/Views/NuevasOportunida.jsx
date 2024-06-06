@@ -1,19 +1,19 @@
 import React from 'react'
-import styles from './Empleados.module.css'
+import styles from './NuevasOportunida.module.css'
 import Header from '../components/Header'
 import AnaliticaBoard from '../components/AnaliticaBoard'
 import ResumenBoard from '../components/ResumenBoard'
 import Campo from '../components/Campo'
 
-const Empleados = () => {
+const NuevasOportunida = () => {
   return (
     <div className={styles.container}>
-        <Header titulo={"Empleados"}/>
+        <Header titulo={"Nuevas Oportunidades"}/>
         <div className={styles.contenido}>
             <AnaliticaBoard />
             <ResumenBoard Campos={
                 <>
-                <Campo titulo={"Empleados"} color={"#10CFBD"}/>
+                <Campo titulo={"Embudo 1"} color={"#E300EC"}/>
                 </>
             }/>
         </div>
@@ -21,4 +21,4 @@ const Empleados = () => {
   )
 }
 
-export default Empleados
+export default NuevasOportunida

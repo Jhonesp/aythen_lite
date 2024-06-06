@@ -8,6 +8,9 @@ import Gastos from './Views/Gastos';
 import EntradasSalidas from './Views/EntradasSalidas';
 import LibroFacturas from './Views/LibroFacturasEmitida';
 import LibroFacturasRec from './Views/LibroFacturasRec';
+import Empleados from './Views/Empleados';
+import NuevasOportunida from './Views/NuevasOportunida';
+import RendimientoComercial from './Views/RendimientoComercial';
 
 const AnaliticaInformes = () => {
     const [isActive, setIsActive] = useState(false);
@@ -62,14 +65,14 @@ const AnaliticaInformes = () => {
             case 'LibroFacturasRec':
                 setContenido(<LibroFacturasRec/> );
                 break;
-            case 'Info Empresa':
-                setContenido(<InfoEmpresa /> );
+            case 'Empleados':
+                setContenido( <Empleados/> );
                 break;
-            case 'Info producto':
-                setContenido(<InfoProducto /> );
+            case 'NuevasOportunidades':
+                setContenido(<NuevasOportunida /> );
                 break;
-            case 'Nombre Docs':
-                setContenido(<NombreDocs /> );
+            case 'RendimientoComercio':
+                setContenido(<RendimientoComercial /> );
                 break;
             case 'Personaliza HTML':
                 setContenido(<Personaliza /> );
@@ -226,13 +229,13 @@ const AnaliticaInformes = () => {
                         </div>
                     )}
                     <div className={styles.opcion} onClick={() => setSubMenu('Empleados')}>
-                        <div className={styles.titulo}>
+                        <div className={styles.titulo} >
                             <p>Empleados</p>
                         </div>
                     </div>
                     {mostrarOpciones === 'Empleados' && (
                         <div className={styles.subopciones}>
-                            <div className={styles.sub}>
+                            <div className={styles.sub} onClick={()=> {handleClick('Empleados')}}>
                                 <p>Empleados</p>
                             </div>
                             <div className={styles.sub}>
@@ -242,6 +245,102 @@ const AnaliticaInformes = () => {
                             <div className={styles.sub}>
                                 <p>Ceses de contrato</p>
                                 <Icon icon="heroicons:sparkles-solid" />
+                            </div>
+                        </div>
+                    )}
+                    <div className={styles.opcion} onClick={() => setSubMenu('ControlHorario')}>
+                        <div className={styles.titulo} >
+                            <p>Control Horario</p>
+                        </div>
+                    </div>
+                    {mostrarOpciones === 'ControlHorario' && (
+                        <div className={styles.subopciones}>
+                            <div className={styles.sub} onClick={()=> {handleClick('Empleados')}}>
+                                <p>Media de horas trabajadas</p>
+                            </div>
+                            <div className={styles.sub}>
+                                <p>Horas trabajadas por empleado</p>
+                                <Icon icon="heroicons:sparkles-solid" />
+                            </div>
+                            <div className={styles.sub}>
+                                <p>Horas extras por empleado</p>
+                                <Icon icon="heroicons:sparkles-solid" />
+                            </div>
+                            <div className={styles.sub}>
+                                <p>Horas</p>
+                                <Icon icon="heroicons:sparkles-solid" />
+                            </div>
+                            <div className={styles.sub}>
+                                <p>Medias de horas extras</p>
+                                <Icon icon="heroicons:sparkles-solid" />
+                            </div>
+                            <div className={styles.sub}>
+                                <p>Horas de entrada y salida</p>
+                                <Icon icon="heroicons:sparkles-solid" />
+                            </div>
+                            <div className={styles.sub}>
+                                <p>Informe de horas trabajadas</p>
+                                <Icon icon="heroicons:sparkles-solid" />
+                            </div>
+                        </div>
+                    )}
+                    <div className={styles.opcion} onClick={() => setSubMenu('CRM')}>
+                        <div className={styles.titulo} >
+                            <p>CRM</p>
+                        </div>
+                    </div>
+                    {mostrarOpciones === 'CRM' && (
+                        <div className={styles.subopciones}>
+                            <div className={styles.sub} onClick={()=> {handleClick('NuevasOportunidades')}}>
+                                <p>Nuevas oportunidades</p>
+                            </div>
+                            <div className={styles.sub} onClick={()=> {handleClick('RendimientoComercio')}}>
+                                <p>Rendimiento de los comercios</p>
+                                <Icon icon="heroicons:sparkles-solid" />
+                            </div>
+                            <div className={styles.sub}>
+                                <p>Nuevas actividades</p>
+                                <Icon icon="heroicons:sparkles-solid" />
+                            </div>
+                            <div className={styles.sub}>
+                                <p>Oportunidades perdidas por razón</p>
+                                <Icon icon="heroicons:sparkles-solid" />
+                            </div>
+                        </div>
+                    )}
+                    <div className={styles.opcion} onClick={() => setSubMenu('Proyectos')}>
+                        <div className={styles.titulo}>
+                            <p>Proyectos</p>
+                        </div>
+                    </div>
+                    {mostrarOpciones === 'Proyectos' && (
+                        <div className={styles.subopciones}>
+                            <div className={styles.sub} onClick={()=> {handleClick('CRM')}}>
+                                <p>Nuevos proyectos</p>
+                            </div>
+                            <div className={styles.sub}>
+                                <p>Tareas nuevas y tareas resueltas</p>
+                                <Icon icon="heroicons:sparkles-solid" />
+                            </div>
+                            <div className={styles.sub}>
+                                <p>Horas introducidas</p>
+                                <Icon icon="heroicons:sparkles-solid" />
+                            </div>
+                            <div className={styles.sub}>
+                                <p>Respuestas por formulario</p>
+                                <Icon icon="heroicons:sparkles-solid" />
+                            </div>
+                        </div>
+                    )}
+                    <div className={styles.opcion} onClick={() => setSubMenu('Proyectos2')}>
+                        <div className={styles.titulo}>
+                            <p>Proyectos</p>
+                        </div>
+                    </div>
+                    {mostrarOpciones === 'Proyectos2' && (
+                        <div className={styles.subopciones}>
+                            <div className={styles.sub} onClick={()=> {handleClick('CRM')}}>
+                                <p>Registro de actividad</p>
                             </div>
                         </div>
                     )}
