@@ -11,6 +11,8 @@ import LibroFacturasRec from './Views/LibroFacturasRec';
 import Empleados from './Views/Empleados';
 import NuevasOportunida from './Views/NuevasOportunida';
 import RendimientoComercial from './Views/RendimientoComercial';
+import RegistroActivida from './Views/RegistroActivida';
+import NuevasActividades from './Views/NuevasActividades';
 
 const AnaliticaInformes = () => {
     const [isActive, setIsActive] = useState(false);
@@ -74,10 +76,14 @@ const AnaliticaInformes = () => {
             case 'RendimientoComercio':
                 setContenido(<RendimientoComercial /> );
                 break;
-            case 'Personaliza HTML':
-                setContenido(<Personaliza /> );
-                setIsActive(true);
-                console.log("hola");
+            case 'RegistroActividad':
+                setContenido(<RegistroActivida /> );
+                break;
+            case 'NuevasActividades':
+                setContenido(<NuevasActividades /> );
+                break;
+            case 'e':
+                setContenido(<RegistroActivida /> );
                 break;
             default:
                 setContenido(null);
@@ -298,7 +304,7 @@ const AnaliticaInformes = () => {
                                 <p>Rendimiento de los comercios</p>
                                 <Icon icon="heroicons:sparkles-solid" />
                             </div>
-                            <div className={styles.sub}>
+                            <div className={styles.sub} onClick={()=> {handleClick('NuevasActividades')}}>
                                 <p>Nuevas actividades</p>
                                 <Icon icon="heroicons:sparkles-solid" />
                             </div>
@@ -339,7 +345,7 @@ const AnaliticaInformes = () => {
                     </div>
                     {mostrarOpciones === 'Proyectos2' && (
                         <div className={styles.subopciones}>
-                            <div className={styles.sub} onClick={()=> {handleClick('CRM')}}>
+                            <div className={styles.sub} onClick={()=> {handleClick('RegistroActividad')}}>
                                 <p>Registro de actividad</p>
                             </div>
                         </div>

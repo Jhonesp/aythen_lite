@@ -1,0 +1,31 @@
+.campo{
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #EAECF0;
+    align-items: center;
+}
+
+.sub{
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    color: #667085;
+    font-size: 12px;
+    font-weight: 500;
+    padding: 10px 0;
+}
+
+
+.color{
+    border-radius: 100%;
+    height: 13px;
+    width: 13px;
+    background-color: #D9D9D9;
+}
+
+#evento{
+    color: #701BDD;
+    font-weight: 700;
+}
