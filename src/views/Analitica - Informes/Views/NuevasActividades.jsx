@@ -13,7 +13,12 @@ const NuevasActividades = () => {
             <AnaliticaBoard />
             <ResumenBoard Campos={
                 <>
-                <Campo titulo={"Embudo 1"} color={"#E300EC"}/>
+                <Campo titulo={"Cena"} color={"#9741FF"}/>
+                <Campo titulo={"Comida"} color={"#FF7441"}/>
+                <Campo titulo={"Llamada"} color={"#FFC641"}/>
+                <Campo titulo={"No asignado"} color={"#F66A67"}/>
+                <Campo titulo={"Reunión"} color={"#41A5FF"}/>
+                <Campo titulo={"Vuelo"} color={"#FF4941"}/>
                 </>
             }/>
         </div>

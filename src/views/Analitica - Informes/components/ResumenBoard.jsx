@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './ResumenBoard.module.css'
-import Campo from './Campo'
 
 const ResumenBoard = ({Campos}) => {
   return (

@@ -13,6 +13,9 @@ import NuevasOportunida from './Views/NuevasOportunida';
 import RendimientoComercial from './Views/RendimientoComercial';
 import RegistroActivida from './Views/RegistroActivida';
 import NuevasActividades from './Views/NuevasActividades';
+import OportunidadesPerdidas from './Views/OportunidadesPerdidas';
+import TareasNuevas from './Views/TareasNuevas';
+import NuevosProyectos from './Views/NuevosProyectos';
 
 const AnaliticaInformes = () => {
     const [isActive, setIsActive] = useState(false);
@@ -82,8 +85,14 @@ const AnaliticaInformes = () => {
             case 'NuevasActividades':
                 setContenido(<NuevasActividades /> );
                 break;
-            case 'e':
-                setContenido(<RegistroActivida /> );
+            case 'OportunidadesPerdidas':
+                setContenido(<OportunidadesPerdidas /> );
+                break;
+            case 'TareasNuevas':
+                setContenido(<TareasNuevas /> );
+                break;
+            case 'NuevosProyectos':
+                setContenido(<NuevosProyectos /> );
                 break;
             default:
                 setContenido(null);
@@ -308,7 +317,7 @@ const AnaliticaInformes = () => {
                                 <p>Nuevas actividades</p>
                                 <Icon icon="heroicons:sparkles-solid" />
                             </div>
-                            <div className={styles.sub}>
+                            <div className={styles.sub} onClick={()=> {handleClick('OportunidadesPerdidas')}}>
                                 <p>Oportunidades perdidas por razón</p>
                                 <Icon icon="heroicons:sparkles-solid" />
                             </div>
@@ -321,10 +330,10 @@ const AnaliticaInformes = () => {
                     </div>
                     {mostrarOpciones === 'Proyectos' && (
                         <div className={styles.subopciones}>
-                            <div className={styles.sub} onClick={()=> {handleClick('CRM')}}>
+                            <div className={styles.sub} onClick={()=> {handleClick('NuevosProyectos')}}>
                                 <p>Nuevos proyectos</p>
                             </div>
-                            <div className={styles.sub}>
+                            <div className={styles.sub} onClick={()=> {handleClick('TareasNuevas')}}>
                                 <p>Tareas nuevas y tareas resueltas</p>
                                 <Icon icon="heroicons:sparkles-solid" />
                             </div>
