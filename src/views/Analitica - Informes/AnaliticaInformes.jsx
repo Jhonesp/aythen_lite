@@ -16,6 +16,7 @@ import NuevasActividades from './Views/NuevasActividades';
 import OportunidadesPerdidas from './Views/OportunidadesPerdidas';
 import TareasNuevas from './Views/TareasNuevas';
 import NuevosProyectos from './Views/NuevosProyectos';
+import MapaContactos from './Views/MapaContactos';
 
 const AnaliticaInformes = () => {
     const [isActive, setIsActive] = useState(false);
@@ -93,6 +94,9 @@ const AnaliticaInformes = () => {
                 break;
             case 'NuevosProyectos':
                 setContenido(<NuevosProyectos /> );
+                break;
+            case 'MapaContactos':
+                setContenido(<MapaContactos /> );
                 break;
             default:
                 setContenido(null);
@@ -238,7 +242,7 @@ const AnaliticaInformes = () => {
                     </div>
                     {mostrarOpciones === 'Contactos' && (
                         <div className={styles.subopciones}>
-                            <div className={styles.sub}>
+                            <div className={styles.sub} onClick={()=> {handleClick('MapaContactos')}}>
                                 <p>Mapa de contactos</p>
                             </div>
                         </div>

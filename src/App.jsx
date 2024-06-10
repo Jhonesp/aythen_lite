@@ -10,12 +10,13 @@ import MenuContainer from "./views/Menu_lite/MenuContainer"
 import Analitics from "./views/Analiticas/Analitics"
 import ContabilidadContainer from "./views/Contabilidad/ContabilidadContainer"
 import AnaliticaInformes from "./views/Analitica - Informes/AnaliticaInformes"
+import NuevosProductos from "./views/Productos/NuevosProductos"
 
 function App() {
 
   return (
     <>
-    <AnaliticaInformes />
+    <NuevosProductos />
     </>
   )
 }

@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(86,44,168,1) 0%, rgba(71,36,143,1) 35%, rgba(56,27,117,1) 72%, rgba(24,10,64,1) 100%);
+}
+
+.subcontainer{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: 100%;
+    padding: 0 30px;
+    gap: 20px;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;    
+    height: 100%;
+}
