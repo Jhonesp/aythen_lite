@@ -33,7 +33,7 @@
 
 .column .row p{
     margin: 0;
-    font-size: calc(1vw + 0.3vh);
+    font-size: calc(0.7vw + 0.3vh);
 }
 
 .impuesto{

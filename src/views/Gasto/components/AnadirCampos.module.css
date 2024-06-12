@@ -1,0 +1,145 @@
+.campos_container{
+    display: flex;
+    flex-direction: column;
+}
+
+.anadir_container{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    gap: 20px;    
+    align-items: flex-end;
+}
+
+
+.campos_container .descuento{
+    display: flex;
+    justify-content: end;
+}
+
+.campos_container .descuento h3{
+    min-width: 33%;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.anadir_container .anadir_campos{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    width: 60%;
+    border-radius: 8px;
+    padding: 10px 20px;
+    gap: 10px;
+    height: fit-content;
+}
+
+.anadir_container .anadir_campos .anadir_linea{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.anadir_container .anadir_campos button{
+    max-width: fit-content;
+    font-family: 'Inter';
+    background-color: #8D49E4;
+    color: #fff;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    padding: 5px;
+    border-right: 1px solid #fff;
+    font-weight: 600;
+}
+
+.anadir_container .anadir_campos select{
+    max-width: fit-content;
+    font-family: 'Inter';
+    background-color: #8D49E4;
+    color: #fff;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    min-height: 26px;
+}
+
+.anadir_container .anadir_campos .check {
+    display: flex;
+    align-items: center;
+}
+
+.anadir_container .anadir_campos .check label{
+    font-size: 12px;
+}
+
+.anadir_container input[type="checkbox"] {
+    box-sizing: border-box;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border: 2px solid #D9D9D9;
+    border-radius: 2px;
+    appearance: none;
+    background-color: transparent;
+    outline: none;
+    transition: outline 0.1s;
+    margin-right: 7px;
+}
+.anadir_container input[type="checkbox"]:checked {
+    background-size: cover;
+    padding: 2px;
+    border-color: #D9D9D9;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 32 32" xml:space="preserve"><path style="fill: %23274c77" d="M11.941,28.877l-11.941-11.942l5.695-5.696l6.246,6.246l14.364-14.364L32,8.818"/></svg>');
+}
+
+.anadir_container .total{
+    display: flex;
+    flex-direction: column;
+    background-color: #917EB2;
+    border-radius: 8px;
+    flex: 1;
+}
+
+.anadir_container .total .subtotal{
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #fff;
+    align-items: center;
+    text-align: end;
+    color:  #fff;    
+    padding: 7px 20px;
+}
+
+.anadir_container .total .subtotal:last-child{
+    border-bottom: none;
+}
+
+.anadir_container .total .subtotal p{
+    flex: 1;
+    margin: 0;
+}
+
+.anadir_container .total .subtotal h3{
+    flex: 1;
+    margin: 0;
+}
+
+.anadir_container .total .subsub{
+    text-align: unset;
+}
+
+.anadir_container .total .subsub h3{
+    text-align: end;
+}
+
+.anadir_container .total .subsub:last-child{    
+    border-bottom: 1px solid #fff;
+}
+
+#first{
+    margin-top: 7px;
+    font-weight: 700;
+}

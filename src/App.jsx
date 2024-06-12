@@ -11,12 +11,13 @@ import Analitics from "./views/Analiticas/Analitics"
 import ContabilidadContainer from "./views/Contabilidad/ContabilidadContainer"
 import AnaliticaInformes from "./views/Analitica - Informes/AnaliticaInformes"
 import NuevosProductos from "./views/Productos/NuevosProductos"
+import NuevaCompra from "./views/Gasto/NuevaCompra"
 
 function App() {
 
   return (
     <>
-    <NuevosProductos />
+    <NuevaCompra />
     </>
   )
 }

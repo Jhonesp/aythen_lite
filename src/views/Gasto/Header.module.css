@@ -1,0 +1,79 @@
+.header_container{
+    background-color: #363239;
+    display: flex;
+    flex: 1;
+    max-height: 20px;
+    padding: 20px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+}
+
+.header_container .header_inicio, .header_container .header_final{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.header_container .header_inicio .plantilla_name p{
+    margin: 0;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.header_container .header_inicio .boton_close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    min-height: 24px;
+    border-radius: 4px;
+    background-color: #E2D1F8;
+    cursor: pointer;
+}
+
+
+.header_container .header_final .boton_mas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    min-height: 32px;
+    border-radius: 4px;
+    background-color: #E2D1F8;
+    color: #701BDD;
+    cursor: pointer;
+}
+
+.header_container .header_inicio .boton_close svg{
+    color: #8F4CE4;
+    font-size: 16px;
+}
+
+.header_container .header_final{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.header_container .header_final .boton_guardar{
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 32px;
+    min-width: 108px;
+    border-radius: 4px;
+    background-color: #8D49E4;
+    cursor: pointer;
+}
+
+.header_container .header_final .boton_guardar p{
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
