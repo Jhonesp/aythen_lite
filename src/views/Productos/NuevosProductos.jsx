@@ -7,6 +7,8 @@ import Compras from './Components/Compras'
 import Seguimiento from './Components/Seguimiento'
 import GestionStock from './Components/GestionStock'
 import Contabilidad from './Components/Contabilidad'
+import Categorizacion from './Components/Categorizacion'
+import Imagen from './Components/Imagen'
 
 const NuevosProductos = () => {
     return (
@@ -22,7 +24,8 @@ const NuevosProductos = () => {
                     <Contabilidad />
                 </div>
                 <div className={styles.right}>
-
+                    <Categorizacion />
+                    <Imagen />
                 </div>
             </div>
 

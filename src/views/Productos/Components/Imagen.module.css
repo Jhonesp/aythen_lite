@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    gap: 5px;
+}
+
+.container p{
+    margin: 0;
+    color: #828282;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.container h4{
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.drag{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    border: 2px dashed #979797;
+    margin-top: 20px;
+    cursor: pointer;
+}
