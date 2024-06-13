@@ -33,6 +33,22 @@ const ScrollBar = ({ actualizarEstado }) => {
             <p>Presupuesto</p>
             <i></i>
         </div>
+        <div className={`${styles.boton} ${active===6 ? styles.active : ''}`}onClick={()=>{handleChange(6)}} >
+            <p>Gastos</p>
+            <i></i>
+        </div>
+        <div className={`${styles.boton} ${active===6 ? styles.active : ''}`}onClick={()=>{handleChange(6)}} >
+            <p>Productos</p>
+            <i></i>
+        </div>
+        <div className={`${styles.boton} ${active===6 ? styles.active : ''}`}onClick={()=>{handleChange(6)}} >
+            <p>Impuestos</p>
+            <i></i>
+        </div>
+        <div className={`${styles.boton} ${active===6 ? styles.active : ''}`}onClick={()=>{handleChange(6)}} >
+            <p>Contabilidad</p>
+            <i></i>
+        </div>
     </div>
   )
 }

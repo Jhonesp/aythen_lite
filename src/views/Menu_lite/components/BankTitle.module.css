@@ -1,0 +1,16 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+}
+
+.container h4{
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+
+.container p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}

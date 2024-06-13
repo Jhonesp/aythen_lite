@@ -11,22 +11,37 @@ import Facturas from './components/Facturas'
 import BankAdd from './components/BankAdd'
 import ScrollBar from './components/ScrollBar'
 import { useState } from 'react'
+import BankTitle from './components/BankTitle'
+import ScrollBarBanco from './components/ScrollBarBanco'
 
 
 function MenuContainer() {
   let [active, setActive] = useState();
+  const [contenido, setContenido] = useState();
+  function handleChange(estado){
+    switch (estado) {
+      case 'datos':
+        setContenido(<DatosNegocio />)
+        break;
+    
+      default:
+        break;
+    }
+  }
 
   return (
     <div className={styles.container}>
       <Header />
       <ScrollBar actualizarEstado={setActive}/>
-      <DatosNegocio />
+      <BankTitle />
+      <ScrollBarBanco actualizarEstado={setActive}/>
+      {(active == 'datos' && (<DatosNegocio />))}
+      {(active == 'facturas' && (<Facturas />))}
+      {(active == 'bancos' && (<BankAdd />))}
+      {(active == 'metodos' && (<BankMethods />))}
       <Plan />
-      <Facturas />
-      <BankAdd />
       <Actions />
       <Consejos />
-      <BankMethods />
       <Metricas />
       <Learn />
       
