@@ -1,0 +1,112 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.small_boton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    background-color: #E2D1F8;
+    color: #701BDD;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.boton{
+    background-color: #701BDD;
+    color: #E7E7E7;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 8px 14px;
+    font-size: 14px;
+    cursor: pointer;
+    
+}
+
+.contenido{
+    background-color: #756794;
+    flex: 1;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+
+.contenido input{
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    padding-left: 30px;
+    max-width: 100px;
+}
+
+.contenido select{
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    max-width: 100px;
+    color: #1E0045;
+    font-weight: 600;
+    background-color: #F6F3FE;
+}
+
+#icono{
+    position: relative;
+    color: #701BDD;
+    left: 37px;
+    font-size: 25px;
+}
+
+.imagen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.imagen img{
+    width: 250px;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.desc h4{
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.desc p{
+    font-size: 14px;
+}
+
+.botones_end{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.botones_end p{
+    color: #2C0262;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 0;
+    margin-top: 10px;
+}

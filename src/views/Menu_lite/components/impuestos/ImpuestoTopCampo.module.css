@@ -1,0 +1,34 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    align-items: center;
+    border-bottom: 1px solid #DBDBDB;
+}
+
+.container p{
+    flex: 1;
+    text-align: center;
+    color: #74828F;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#acept{
+    background-color: #D4F8D3;
+    color: #017017;
+    border-radius: 20px;
+    padding: 3px 0;
+}
+
+#ver{
+    color: #701BDD;
+    font-weight: 800;
+    cursor: pointer;
+    flex: 0.5;
+}
+
+.container:last-child{
+    border-radius: 0 0 8px 8px;
+    border-bottom: none;
+}

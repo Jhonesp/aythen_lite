@@ -17,6 +17,7 @@ import Presupuesto from './components/Presupuesto'
 import Gastos from './components/Gastos'
 import Productos from './components/Productos'
 import Contabilidad from './components/Contabilidad'
+import Impuestos from './components/impuestos/Impuestos'
 
 
 function MenuContainer() {
@@ -50,6 +51,9 @@ function MenuContainer() {
       ))}
       {(active === 8 && (
         <Productos />
+      ))}
+      {(active === 9 && (
+        <Impuestos />
       ))}
       {(active === 10 && (
         <Contabilidad />
