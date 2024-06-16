@@ -2,6 +2,8 @@ import React from 'react'
 import styles from './Impuestos.module.css'
 import { Icon } from '@iconify/react';
 import ImpuestosTop from './ImpuestosTop';
+import ResumenImpuestos from './ResumenImpuestos';
+import ProximosImpuestos from './ProximosImpuestos';
 
 const Impuestos = () => {
   return (
@@ -20,7 +22,8 @@ const Impuestos = () => {
 
         <div className={styles.contenido}>
             <ImpuestosTop />
-
+            <ResumenImpuestos />
+            <ProximosImpuestos />
         </div>
     </div>
   )

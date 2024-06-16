@@ -4,7 +4,7 @@ import ImpuestoTopCampo from './ImpuestoTopCampo'
 
 const ImpuestosTop = () => {
   return (
-    <div>
+    <div className={styles.contenido}>
         <div className={styles.top}>
                 <div className={styles.seccion}>
                     <div className={styles.insig}>303</div>
