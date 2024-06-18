@@ -6,10 +6,12 @@ import PresupuestoTable from './components/PresupuestoTable'
 import AnadirCampos from './components/AnadirCampos'
 import Categorizacion from './components/Categorizacion'
 import Archivo from './components/Archivo'
+import ScrollToTop from '../../ScrollToTop'
 
 const NuevaCompra = () => {
   return (
     <div className={styles.container}>
+      <ScrollToTop />
       <Header />
         <div className={styles.row}>
           <div className={styles.left}>

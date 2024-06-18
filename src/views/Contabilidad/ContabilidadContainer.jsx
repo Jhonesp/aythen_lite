@@ -3,10 +3,12 @@ import styles from './ContabilidadContainer.module.css'
 import Header from './components/Header'
 import { Icon } from '@iconify/react';
 import LibroCuentas from './LibroCuentas';
+import ScrollToTop from '../../ScrollToTop';
 
 const ContabilidadContainer = () => {
   return (
     <div className={styles.container}>
+        <ScrollToTop />
         <Header />
         <div className={styles.topbar}>
             <div className={styles.mostrar}>
