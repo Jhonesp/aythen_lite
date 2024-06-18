@@ -37,7 +37,7 @@ const Productos = () => {
                 </div>
             </div>
             <div className={styles.imagen}>
-            <img src="src/assets/aythenproductos.png" alt="imagen" />
+            <img src="https://github.com/Jhonesp/aythen_lite/blob/main/src/assets/aythenproductos.png?raw=true" alt="imagen" />
             </div>
             <div className={styles.desc}>
                 <h4>Productos</h4>

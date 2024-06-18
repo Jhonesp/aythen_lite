@@ -37,7 +37,7 @@ const Contabilidad = () => {
                 </div>
             </div>
             <div className={styles.imagen}>
-            <img src="src/assets/aythencontabilidad.png" alt="imagen" />
+            <img src="https://github.com/Jhonesp/aythen_lite/blob/main/src/assets/aythencontabilidad.png?raw=true" alt="imagen" />
             </div>
             <div className={styles.desc}>
                 <h4>Todas las cuentas están vacías en este filtro de fechas</h4>

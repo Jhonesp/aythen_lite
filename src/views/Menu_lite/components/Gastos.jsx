@@ -37,7 +37,7 @@ const Gastos = () => {
                 </div>
             </div>
             <div className={styles.imagen}>
-            <img src="src/assets/aythengastos.png" alt="imagen" />
+            <img src="https://github.com/Jhonesp/aythen_lite/blob/main/src/assets/aythengastos.png?raw=true" alt="imagen" />
             </div>
             <div className={styles.desc}>
                 <h4>Facturas de compra</h4>

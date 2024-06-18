@@ -37,7 +37,7 @@ const Contactos = () => {
                 </div>
             </div>
             <div className={styles.imagen}>
-            <img src="src/assets/aythencontactos.png" alt="imagen" />
+            <img src="https://github.com/Jhonesp/aythen_lite/blob/main/src/assets/aythencontactos.png?raw=true" alt="imagen" />
             </div>
             <div className={styles.desc}>
                 <h4>Contactos</h4>
