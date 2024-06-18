@@ -8,7 +8,7 @@ const Header = () => {
     return (
         <div className={styles.header_container}>
             <div className={styles.header_inicio}>
-                <Link to='/'><div className={styles.boton_close}>
+                <Link to='/aythen_lite/'><div className={styles.boton_close}>
                     <CloseIcon />
                 </div>
                 </Link>

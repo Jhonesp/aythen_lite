@@ -20,7 +20,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom"
 function App() {
 
   const router = createBrowserRouter([
-    {path: '/', element: <MenuContainer />},
+    {path: '/aythen_lite/', element: <MenuContainer />},
     {path: '/Contabilidad', element: <ContabilidadContainer/>},
     {path: '/NuevoProducto', element: <NuevosProductos/>},
     {path: '/Nuevopresupuesto', element: <NuevoPresupuesto />},

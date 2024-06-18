@@ -16,7 +16,7 @@ const Contactos = () => {
             <div className={styles.small_boton}>
             <Icon icon="pepicons-pencil:dots-y" />
             </div>
-            <Link to='/'><div className={styles.boton}>
+            <Link to='/aythen_lite/'><div className={styles.boton}>
                Nuevo Contacto
             </div></Link>
         </div>
@@ -43,7 +43,7 @@ const Contactos = () => {
                 <h4>Contactos</h4>
                 <p>Aquí puedes gestionar tus clientes y proveedores con toda su información y documentos</p>
                 <div style={{display:"flex", gap:"10px"}}>
-                    <Link to='/'><div className={styles.boton}>Nuevo contacto</div></Link>
+                    <Link to='/aythen_lite/'><div className={styles.boton}>Nuevo contacto</div></Link>
                     <div className={styles.boton}>Importar contactos</div>
                 </div>
             </div>
