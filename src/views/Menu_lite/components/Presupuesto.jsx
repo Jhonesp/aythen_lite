@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Presupuesto.module.css'
 import { Icon } from '@iconify/react';
+import { Link } from 'react-router-dom';
 
 const Presupuesto = () => {
   return (
@@ -15,9 +16,9 @@ const Presupuesto = () => {
             <div className={styles.small_boton}>
             <Icon icon="pepicons-pencil:dots-y" />
             </div>
-            <div className={styles.boton}>
+            <Link to='/Nuevopresupuesto'><div className={styles.boton}>
                 Nuevo Presupuesto
-            </div>
+            </div></Link>
         </div>
 
         <div className={styles.contenido}>
@@ -42,7 +43,7 @@ const Presupuesto = () => {
                 <h4>Presupuestos</h4>
                 <p>Desde  aquí puedes crear nuevos presupuestos, enviar presupuestos  personalizados y verificar si tus clientes han abierto los emails.  También puedes comprobar el estado de los presupuestos.</p>
                 <div style={{display:"flex", gap:"10px"}}>
-                    <div className={styles.boton}>Nuevo Presupuesto</div>
+                    <Link to='/Nuevopresupuesto'><div className={styles.boton}>Nuevo Presupuesto</div></Link>
                     <div className={styles.boton}>Importar Presupuestos</div>
                 </div>
             </div>

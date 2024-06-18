@@ -1,24 +1,24 @@
 import React from 'react'
-import styles from './Contabilidad.module.css'
+import styles from './Contactos.module.css'
 import { Icon } from '@iconify/react';
 import { Link } from 'react-router-dom';
 
-const Contabilidad = () => {
+const Contactos = () => {
   return (
     <div className={styles.container}>
         <div className={styles.header}>
+            <div className={styles.small_boton}>
+            <Icon icon="cil:drop" />
+            </div>
             <div className={styles.small_boton}>
             <Icon icon="bi:book" />
             </div>
             <div className={styles.small_boton}>
             <Icon icon="pepicons-pencil:dots-y" />
             </div>
-            <div className={styles.small_boton} style={{fontSize:"14px", fontWeight:"700"}}>
-                Nuevo asiento
-            </div>
-            <div className={styles.boton}>
-                Nueva Cuenta
-            </div>
+            <Link to='/'><div className={styles.boton}>
+               Nuevo Contacto
+            </div></Link>
         </div>
 
         <div className={styles.contenido}>
@@ -37,18 +37,14 @@ const Contabilidad = () => {
                 </div>
             </div>
             <div className={styles.imagen}>
-            <img src="src/assets/aythencontabilidad.png" alt="imagen" />
+            <img src="src/assets/aythencontactos.png" alt="imagen" />
             </div>
             <div className={styles.desc}>
-                <h4>Todas las cuentas están vacías en este filtro de fechas</h4>
+                <h4>Contactos</h4>
+                <p>Aquí puedes gestionar tus clientes y proveedores con toda su información y documentos</p>
                 <div style={{display:"flex", gap:"10px"}}>
-                    <div className={styles.boton}> <Link to="/Contabilidad"> Mostrar cuentas sin valor</Link></div>
-                </div>
-                <div className={styles.botones_end}>
-                <p>Año actual</p>
-                <p>Último año</p>
-                <p>Mes actual</p>
-                <p>Último mes</p>
+                    <Link to='/'><div className={styles.boton}>Nuevo contacto</div></Link>
+                    <div className={styles.boton}>Importar contactos</div>
                 </div>
             </div>
         </div>
@@ -56,4 +52,4 @@ const Contabilidad = () => {
   )
 }
 
-export default Contabilidad
+export default Contactos

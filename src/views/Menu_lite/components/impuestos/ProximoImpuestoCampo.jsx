@@ -1,8 +1,9 @@
 import React from 'react'
 import style from './ProximoImpuestoCampo.module.css'
 import { Icon } from '@iconify/react';
+import { Link } from 'react-router-dom';
 
-const ProximoImpuestoCampo = ({numero}) => {
+const ProximoImpuestoCampo = ({numero, link}) => {
   return (
     <div className={style.campo}>
         <div style={{display:"flex", flexDirection:"row",gap:"10px"}}>
@@ -17,7 +18,9 @@ const ProximoImpuestoCampo = ({numero}) => {
                 </div>
             </div>
         </div>
+        <Link to={link}>
         <Icon icon="ci:chevron-right" />
+        </Link>
     </div>
   )
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Gastos.module.css'
 import { Icon } from '@iconify/react';
+import { Link } from 'react-router-dom';
 
 const Gastos = () => {
   return (
@@ -42,7 +43,7 @@ const Gastos = () => {
                 <h4>Facturas de compra</h4>
                 <p>Empieza a contabilizar tus facturas de compra o tickets, los vencimientos y tus pagos pendientes.</p>
                 <div style={{display:"flex", gap:"10px"}}>
-                    <div className={styles.boton}>Nueva Compra</div>
+                    <Link to='/Nuevacompra'><div className={styles.boton}>Nueva Compra</div></Link>
                     <div className={styles.boton}>Importar Compras</div>
                 </div>
             </div>

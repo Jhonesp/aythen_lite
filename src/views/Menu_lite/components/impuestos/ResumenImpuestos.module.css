@@ -12,7 +12,7 @@
     justify-content: space-between;
 }
 
-input{
+.contenido input{
     border: none;
     border-radius: 4px;
     padding: 8px;
@@ -20,11 +20,11 @@ input{
     max-width: 100px;
 }
 
-select{
+.contenido select{
     border: none;
     border-radius: 4px;
     padding: 8px;
-    max-width: 100px;
+    max-width: 120px;
     color: #1E0045;
     font-weight: 600;
     background-color: #F6F3FE;

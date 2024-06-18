@@ -2,14 +2,15 @@ import React from 'react'
 import styles from './Header.module.css'
 import CloseIcon from '@mui/icons-material/Close';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     return (
         <div className={styles.header_container}>
             <div className={styles.header_inicio}>
-                <div className={styles.boton_close}>
+                <Link to='/'><div className={styles.boton_close}>
                     <CloseIcon />
-                </div>
+                </div></Link>
                 <div className={styles.plantilla_name}>
                     <p>Modelo 111 trimestral - 1T 2024</p>
                 </div>

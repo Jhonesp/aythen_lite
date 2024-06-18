@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './Productos.module.css'
 import { Icon } from '@iconify/react';
+import { Link } from 'react-router-dom';
 
 const Productos = () => {
   return (
@@ -42,7 +43,7 @@ const Productos = () => {
                 <h4>Productos</h4>
                 <p>Desde  aquí puedes crear y personalizar tu catálogo de productos, gestionar  tus compras y ventas, y controlar el inventario actualizado en tiempo  real gracias a los múltiples informes disponibles.</p>
                 <div style={{display:"flex", gap:"10px"}}>
-                    <div className={styles.boton}>Añade tu primer producto</div>
+                    <Link to='/NuevoProducto'><div className={styles.boton}>Añade tu primer producto</div></Link>
                 </div>
             </div>
         </div>

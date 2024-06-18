@@ -31,13 +31,7 @@
     padding: 8px 14px;
     font-size: 14px;
     cursor: pointer;
-    text-decoration: none;
-}
-
-.boton a{
-    text-decoration: none;
-    color: #E7E7E7;
-    font-weight: 700;
+    
 }
 
 .contenido{
@@ -58,7 +52,7 @@
     border: none;
     border-radius: 4px;
     padding: 8px;
-    padding-left: 30px;
+    padding-left: 25px;
     max-width: 100px;
 }
 
@@ -98,7 +92,7 @@
 }
 
 .desc h4{
-    margin-bottom: 10px;
+    margin-bottom: 0;
     font-size: 17px;
 }
 
@@ -106,17 +100,3 @@
     font-size: 14px;
 }
 
-.botones_end{
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-}
-
-.botones_end p{
-    color: #2C0262;
-    font-size: 12px;
-    font-weight: 700;
-    cursor: pointer;
-    margin: 0;
-    margin-top: 10px;
-}

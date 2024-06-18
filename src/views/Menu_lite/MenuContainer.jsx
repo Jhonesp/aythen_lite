@@ -18,6 +18,7 @@ import Gastos from './components/Gastos'
 import Productos from './components/Productos'
 import Contabilidad from './components/Contabilidad'
 import Impuestos from './components/impuestos/Impuestos'
+import Contactos from './components/Contactos'
 
 
 function MenuContainer() {
@@ -43,6 +44,12 @@ function MenuContainer() {
         <Learn />
         </>
       )}
+      {(active === 4 && (
+        <Contabilidad />
+      ))}
+      {(active === 5 && (
+        <Contactos />
+      ))}
       {(active === 6 && (
         <Presupuesto />
       ))}
@@ -55,9 +62,7 @@ function MenuContainer() {
       {(active === 9 && (
         <Impuestos />
       ))}
-      {(active === 10 && (
-        <Contabilidad />
-      ))}
+      
       
       
     </div>

@@ -70,10 +70,6 @@ const ScrollBar = ({ actualizarEstado }) => {
             <p>Impuestos</p>
             <i></i>
         </div>
-        <div className={`${styles.boton} ${active===10 ? styles.active : ''}`}onClick={()=>{handleChange(10)}} >
-            <p>Contabilidad</p>
-            <i></i>
-        </div>
     </div>
   )
 }
