@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styles from './Contactos.module.css'
 import { Icon } from '@iconify/react';
 import { Link } from 'react-router-dom';
+import NuevoContacto from './Contactos/NuevoContacto';
 
 const Contactos = () => {
+    const [showModal, setShowModal] = useState(false);
   return (
     <div className={styles.container}>
         <div className={styles.header}>
@@ -43,11 +45,12 @@ const Contactos = () => {
                 <h4>Contactos</h4>
                 <p>Aquí puedes gestionar tus clientes y proveedores con toda su información y documentos</p>
                 <div style={{display:"flex", gap:"10px"}}>
-                    <Link to='/aythen_lite/'><div className={styles.boton}>Nuevo contacto</div></Link>
+                    <div className={styles.boton}>Nuevo contacto</div>
                     <div className={styles.boton}>Importar contactos</div>
                 </div>
             </div>
         </div>
+        <NuevoContacto />
     </div>
   )
 }
