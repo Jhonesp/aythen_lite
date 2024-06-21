@@ -50,7 +50,7 @@ const ScrollBar = ({actualizarEstado}) => {
             <p>Contabilidad</p>
             <i></i>
         </div>
-        <div className={styles.boton} style={{flex:'1',justifyContent:'space-between'}}>
+        <div className={styles.boton} style={{flex:'1',justifyContent:'space-between', cursor:"unset"}}>
             <p> </p>
             <i></i>
         </div>

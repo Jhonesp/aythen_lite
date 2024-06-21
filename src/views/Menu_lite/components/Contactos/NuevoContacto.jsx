@@ -3,6 +3,7 @@ import styles from './NuevoContacto.module.css'
 import { Icon } from '@iconify/react';
 import ScrollBar from './ScrollBar';
 import Basico from './Basico';
+import Banco from './Banco';
 
 const NuevoContacto = () => {
   const [active, setActive] = useState(1);
@@ -30,6 +31,9 @@ const NuevoContacto = () => {
         <ScrollBar actualizarEstado={setActive}/>
         {active === 1 && (
           <Basico />
+        )}
+        {active === 2 && (
+          <Banco />
         )}
     </div>
     </div>
