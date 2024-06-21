@@ -45,12 +45,12 @@ const Contactos = () => {
                 <h4>Contactos</h4>
                 <p>Aquí puedes gestionar tus clientes y proveedores con toda su información y documentos</p>
                 <div style={{display:"flex", gap:"10px"}}>
-                    <div className={styles.boton}>Nuevo contacto</div>
+                    <div className={styles.boton} onClick={()=>{setShowModal(true)}}>Nuevo contacto</div>
                     <div className={styles.boton}>Importar contactos</div>
                 </div>
             </div>
         </div>
-        <NuevoContacto />
+        <NuevoContacto closeModal={setShowModal}/>
     </div>
   )
 }
