@@ -9,7 +9,7 @@ const NuevoContacto = ({closeModal}) => {
   const [active, setActive] = useState(1);
   return (
     <div className={styles.modal_overlay}>
-    <div className={styles.container}>
+    <div className={`${styles.container} ${styles.scaleIn}`}>
         <div className={styles.distancia}>
         <h4>Nuevo Contacto</h4>
         <Icon icon="gridicons:cross" onClick={()=>{closeModal(false)}}/>

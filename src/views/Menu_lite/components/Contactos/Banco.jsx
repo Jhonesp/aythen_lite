@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import styles from './Banco.module.css'
 import { Icon } from '@iconify/react';
+import AnadirBanco from './AnadirBanco';
 
 const Banco = () => {
-  const [bancoDatos, setBancoDatos] = useState(true);
   const [estado, setEstado] = useState(true);
   return (
     <div className={styles.container}>
@@ -15,48 +15,8 @@ const Banco = () => {
           </div>
         ) 
         : <>
-          <div className={`${styles.selector} ${bancoDatos? '' : styles.active}`} onClick={()=>{setBancoDatos(!bancoDatos)}}>
-          <Icon icon="bi:chevron-down" />
-        </div>
-          {bancoDatos && (
-            <div className={`${styles.contenido_bank} ${bancoDatos ? styles.fadeIn : styles.hidden}`}>
-            <div className={styles.fila}>
-              <div className={styles.campo}>
-                <label htmlFor="">Banco</label>
-                <input type="text" />
-              </div>
-              <div className={styles.campo}>
-                <label htmlFor="">IBAN</label>
-                <input type="text" />
-              </div>
-              <div className={styles.campo}>
-                <label htmlFor="">SWIFT</label>
-                <input type="text" />
-              </div>
-            </div>
-            <h5>Remesas SEPA</h5>
-            <div className={styles.fila}>
-              <div className={styles.campo}>
-                <label htmlFor="">Banco</label>
-                <input type="text" />
-              </div>
-              <div className={styles.campo}>
-                <label htmlFor="">Banco</label>
-                <input type="text" />
-              </div>
-            </div>
-            <div className={styles.right}>
-                <div className={styles.botones}>
-                  <input type="checkbox" name="" id="" />
-                  <p style={{color:"#701BDD"}}>Banco predeterminado</p>
-                </div>
-                <div className={styles.botones} style={{color:"#B20431"}}>
-                <Icon icon="mynaui:trash" />
-                  <p>Eliminar</p>
-                </div>
-            </div>
-          </div>
-          )}
+          <AnadirBanco />
+          <p className={styles.anadir}>Añadir banco</p>
         </>
         }
         

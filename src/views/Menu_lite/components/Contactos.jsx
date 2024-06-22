@@ -50,7 +50,7 @@ const Contactos = () => {
                 </div>
             </div>
         </div>
-        <NuevoContacto closeModal={setShowModal}/>
+        {showModal && <NuevoContacto closeModal={setShowModal}/>}
     </div>
   )
 }
