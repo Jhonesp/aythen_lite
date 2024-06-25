@@ -66,9 +66,7 @@ const Basico = () => {
                 <input type="text" placeholder='Sin especificar'/>
             </div>
         </div>
-        <div className={styles.boton}>
-            <button>Crear</button>
-        </div>
+        
     </div>
   )
 }

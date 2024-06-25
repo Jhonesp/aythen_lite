@@ -23,18 +23,3 @@
     border: none;
 }
 
-.boton{
-    display: flex;
-    justify-content: flex-end;
-}
-
-.boton button{
-    border-radius: 4px;
-    background-color: #701BDD;
-    padding: 7px 20px;
-    cursor: pointer;
-    color: #E7E7E7;
-    font-weight: 600;
-    border: none;
-    outline: none;
-}

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import styles from './Contactos.module.css'
 import { Icon } from '@iconify/react';
-import { Link } from 'react-router-dom';
 import NuevoContacto from './Contactos/NuevoContacto';
 
 const Contactos = () => {
@@ -18,9 +17,9 @@ const Contactos = () => {
             <div className={styles.small_boton}>
             <Icon icon="pepicons-pencil:dots-y" />
             </div>
-            <Link to='/aythen_lite/'><div className={styles.boton}>
+            <div className={styles.boton} onClick={()=>{setShowModal(true)}}>
                Nuevo Contacto
-            </div></Link>
+            </div>
         </div>
 
         <div className={styles.contenido}>

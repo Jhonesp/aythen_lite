@@ -4,6 +4,8 @@ import { Icon } from '@iconify/react';
 import ScrollBar from './ScrollBar';
 import Basico from './Basico';
 import Banco from './Banco';
+import Preferencias from './Preferencias';
+import Contabilidad from './Contabilidad';
 
 const NuevoContacto = ({closeModal}) => {
   const [active, setActive] = useState(1);
@@ -35,6 +37,15 @@ const NuevoContacto = ({closeModal}) => {
         {active === 2 && (
           <Banco />
         )}
+        {active === 3 && (
+          <Preferencias />
+        )}
+        {active === 4 && (
+          <Contabilidad />
+        )}
+        <div className={styles.boton}>
+            <button>Crear</button>
+        </div>
     </div>
     </div>
   )
