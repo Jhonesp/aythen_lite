@@ -1,0 +1,111 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2D1F8;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.back svg{
+    color: #701BDD;
+    font-size: 12px;
+}
+
+.container h4{
+    margin: 0;
+}
+
+.container h5{
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+}
+
+
+.head{
+    display: flex;
+    flex-direction: column;
+    background-color: #9E91BB;
+    border-radius: 8px;
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #fff;
+    gap: 10px;
+}
+
+.head img{
+    width: 2.5rem;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.boton{
+    display: flex;
+    background-color: #E2D1F8;
+    padding: 6px 20px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    color: #4A2593;
+    cursor: pointer;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contenido p{
+    color: #ECDEFF;
+    font-size: 14px;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.campo label{
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.campo input{
+    position: relative;
+    padding: 10px;
+    color: #fff;
+    
+}
+
+.campo input::before{
+    content: "";
+  position: absolute;
+  inset: 0;
+    border-radius: 50px; /*1*/
+    border: 2px solid transparent;
+    background: linear-gradient(to bottom, #FDFCFD, #A395C0) border-box;
+    -webkit-mask: /*4*/
+     linear-gradient(#fff 0 0) padding-box, 
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor; /*5'*/
+          mask-composite: exclude; /*5*/
+}
+
+.campo input::placeholder{
+    color: #fff;
+}

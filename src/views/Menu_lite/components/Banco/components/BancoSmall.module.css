@@ -1,0 +1,21 @@
+.container{
+    background-color: #A293C2;
+    border-radius: 8px;
+    border: 1px solid #fff;
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    min-width: 8rem;
+}
+
+.container h4{
+    font-size: 14px;
+}
+
+.container img{
+    width: 3rem;
+}

@@ -1,0 +1,69 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2D1F8;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.back svg{
+    color: #701BDD;
+    font-size: 12px;
+}
+
+.container h4{
+    margin: 0;
+}
+
+.container h5{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search select{
+    padding: 9px;
+    border-radius: 8px 0 0 8px;
+    border: none;
+    background-color: #F5F5F5;
+}
+
+.search input{
+    padding: 10px ;
+    border-radius: 0 8px 8px 0;
+    border: none;
+    flex: 1;
+}
+
+.bancos_grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(2%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideIn {
+    animation: slideInFromRight 0.3s ease-out;
+}

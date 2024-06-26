@@ -1,0 +1,52 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #C6BADC;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.container h5{
+    margin: 0;
+    font-weight: 600;
+}
+
+.container p{
+    margin: 0;
+    font-size: 12px;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.icono{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #E2D1F8;
+    padding: 7px;
+    border-radius: 4px;
+}
+
+
+.container svg{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.icono svg{
+    color: #701BDD;
+    font-size: 25px;
+}

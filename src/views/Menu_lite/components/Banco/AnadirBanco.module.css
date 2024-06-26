@@ -1,0 +1,98 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #816EAA;
+    flex: 1;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.container h3{
+    margin-bottom: 0;
+}
+
+.container p{
+    font-size: 14px;
+}
+
+.bancos{
+    background-color: #BBA8D3;
+    display: flex;
+    border-radius: 50px;
+    max-width: fit-content;
+    color: #701BDD;
+    font-weight: 800;
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+
+.check p{
+    font-weight: 600;
+    color: #fff;
+}
+
+.check svg{
+    color: #00FF33;
+}
+
+.boton{
+    background-color: #701BDD;
+    color: #E7E7E7;
+    font-weight: 600;
+    max-width: fit-content;
+    padding: 8px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.circle{
+    height: 7rem;
+    width: 7rem;
+    background-color: #D2C2E8;
+    border-radius: 100px;
+}
+
+.tipo_cuenta{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tipo_cuenta h3{
+    margin: 10px 0;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(2%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideIn {
+    animation: slideInFromRight 0.3s ease-out;
+}
