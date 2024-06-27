@@ -61,6 +61,13 @@
     font-size: 14px;
     color: #4A2593;
     cursor: pointer;
+    transition: color 0.4s;
+}
+
+.activo{
+    background-color: #701BDD;
+    color: #fff;
+    transition: right 0.4s;
 }
 
 .contenido{
@@ -86,26 +93,88 @@
 }
 
 .campo input{
-    position: relative;
     padding: 10px;
     color: #fff;
-    
-}
-
-.campo input::before{
-    content: "";
-  position: absolute;
-  inset: 0;
-    border-radius: 50px; /*1*/
-    border: 2px solid transparent;
-    background: linear-gradient(to bottom, #FDFCFD, #A395C0) border-box;
-    -webkit-mask: /*4*/
-     linear-gradient(#fff 0 0) padding-box, 
-     linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor; /*5'*/
-          mask-composite: exclude; /*5*/
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0);
+    outline: none;
 }
 
 .campo input::placeholder{
     color: #fff;
+}
+
+.campo select{
+    padding: 10px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    background-color: rgba(0,0,0,0);
+    outline: none;
+}
+
+.advise{
+    display: flex;
+    flex-direction: row;
+    background-color: #9D90B8;
+    border-radius: 4px;
+    padding: 15px;
+    gap: 15px;
+}
+
+.lock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #BBA8D3;
+    color: #fff;
+    padding: 2px 5px;
+    border-radius: 4px;
+    max-height: 25px;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.desc h5{
+    margin: 0;
+}
+
+.desc p{
+    margin: 0;
+    font-size: 13px;
+}
+
+.conectar{
+    display: flex;
+    justify-content: right;
+}
+
+.conectar button{
+    background-color: #701BDD;
+    border-radius: 6px;
+    border: none;
+    color: #fff;
+    padding: 8px 30px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(2%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideIn {
+    animation: slideInFromRight 0.3s ease-out;
 }
