@@ -9,7 +9,7 @@ const Banco = () => {
     <div className={styles.container}>
         {estado ? (
           <div className={styles.contenido}>
-          <img src="src/assets/banco.png" alt="" srcset="" />
+          <img src="src/assets/banco.png" alt="" />
           <h3>Añade el primer banco para tu contacto</h3>
           <div className={styles.boton_bank} onClick={()=>{setEstado(false)}}>Añadir banco</div>
           </div>

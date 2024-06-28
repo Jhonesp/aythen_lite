@@ -8,7 +8,7 @@ const BancoSmall = ({titulo, icono, link}) => {
     }
   return (
     <div className={styles.container} onClick={()=>setPage()}>
-        <img src={icono} alt="" srcset="" />
+        <img src={icono} alt="" />
         <h4>{titulo}</h4>
     </div>
   )

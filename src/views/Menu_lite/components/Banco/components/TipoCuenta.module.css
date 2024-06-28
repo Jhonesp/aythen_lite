@@ -8,9 +8,10 @@
     padding: 15px;
 }
 
-.container h5{
+.desc h5{
     margin: 0;
     font-weight: 600;
+    font-size: 13px !important;
 }
 
 .container p{
@@ -31,6 +32,7 @@
     gap: 8px;
 }
 
+
 .icono{
     display: flex;
     align-items: center;
@@ -49,4 +51,20 @@
 .icono svg{
     color: #701BDD;
     font-size: 25px;
+}
+
+.container img{
+    width: 1.5rem;
+}
+
+.sinconexion{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DDDDDD;
+    color: #4F5660;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 6px;
+    padding: 3px 10px;
 }

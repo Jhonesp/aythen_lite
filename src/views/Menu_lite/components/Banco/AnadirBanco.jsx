@@ -3,6 +3,7 @@ import styles from './AnadirBanco.module.css'
 import { Icon } from '@iconify/react';
 import TipoCuenta from './components/TipoCuenta';
 import BancoSearch from './BancoSearch';
+import Pasarela from './Pasarela';
 
 const AnadirBanco = () => {
     const [estado, setEstado] = useState('inicio');
@@ -44,12 +45,15 @@ const AnadirBanco = () => {
         <h3>Indica qué tipo de cuenta quieres añadir</h3>
         <TipoCuenta icono={<Icon icon="mingcute:bank-fill" />} titulo={'Banco'} desc={'Cuentas corrientes, depósitos, préstamos y líneas de crédito'} link={setEstado} arg={'banco'}/>
         <TipoCuenta icono={<Icon icon="ion:card-sharp" />} titulo={'Tarjeta'} desc={'Tarjetas de crédito y débito'}/>
-        <TipoCuenta icono={<Icon icon="flowbite:window-solid" />} titulo={'Pasarela de pago'} desc={'PayPal y Stripe'} />
-        <TipoCuenta icono={<Icon icon="mingcute:cash-fill" />} titulo={'Caja'} desc={'Movimientos en efectivo'} />
+        <TipoCuenta icono={<Icon icon="flowbite:window-solid" />} titulo={'Pasarela de pago'} desc={'PayPal y Stripe'} link={setEstado} arg={'pasarela'}/>
+        <TipoCuenta icono={<Icon icon="mingcute:cash-fill" />} titulo={'Caja'} desc={'Movimientos en efectivo'}/>
         </div>
     )}
     {estado === 'banco' && (
         <BancoSearch estado={setEstado}/>
+    )}
+    {estado === 'pasarela' && (
+        <Pasarela estado={setEstado}/>
     )}
     
     </div>

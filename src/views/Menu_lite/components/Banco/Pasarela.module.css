@@ -1,0 +1,35 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+
+.back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E2D1F8;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.back svg{
+    color: #701BDD;
+    font-size: 12px;
+}
+
+.container h4{
+    margin: 0;
+}
+
+.container h5{
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.campos{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
