@@ -18,6 +18,12 @@ function MenuContainer() {
     <div className={styles.container}>
       <Header />
       <ScrollBar actualizarEstado={setActive}/>
+      {(active === 1) &&(
+        <Banco />
+      )}
+      {(active === 2) &&(
+        <Banco />
+      )}
       {(active === 3) &&(
         <Banco />
       )}

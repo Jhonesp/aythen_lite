@@ -1,9 +1,29 @@
 import React, { useState } from 'react'
 import styles from './VincularBanco.module.css'
 import { Icon } from '@iconify/react';
+import { useSelector, useDispatch } from 'react-redux';
+import { addItemToArrayOne } from '../../../../store/dataSlice'; 
 
 const VincularBanco = ({icono, titulo, link}) => {
+
+    const arrayOne = useSelector((state) => state.data.arrayOne);
+    const dispatch = useDispatch();
+    const [userValue, setUserValue] = useState('');
+    const [idValue, setIdValue] = useState('');
+    const [passwdValue, setpasswdValue] = useState('');
+
+
     const [estado, setEstado] = useState('conexion');
+
+    const handleChange = (e) => {
+        setInputValue(e.target.value);
+    };
+
+    const handleSetText = () => {
+        const newBank = { user: userValue, id: idValue, password: passwdValue};
+        dispatch(addItemToArrayOne(newBank));
+    };
+
   return (
     <div className={styles.container}>
         <div style={{display:'flex', flexDirection:'row', gap:'10px', alignItems:'center'}}>
@@ -31,8 +51,8 @@ const VincularBanco = ({icono, titulo, link}) => {
             <div className={styles.contenido}>
             <p>Al conectar tu cuenta con Aythen puedes sincronizar movimientos automáticamente</p>
             <div className={styles.campo}>
-                <label htmlFor="">NIF|CIF|NIE|Pasaporte|Usuario*</label>
-                <input type="text" placeholder='NIF'/>
+                <label htmlFor="">NIF|CIF|NIE|Pasaporte|Usuario* {text}</label>
+                <input type="text" placeholder='NIF' value={userValue} onChange={handleChange}/>
             </div>
             <div className={styles.campo}>
                 <label htmlFor="">N° Documento</label>
@@ -78,7 +98,7 @@ const VincularBanco = ({icono, titulo, link}) => {
         </div>
         </>}
         <div className={styles.conectar}>
-            <button>Conectar</button>
+            <button onClick={handleSetText}>Conectar</button>
         </div>
     </div>
   )
