@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import styles from './VincularBanco.module.css'
 import { Icon } from '@iconify/react';
 import { useSelector, useDispatch } from 'react-redux';
@@ -8,21 +8,56 @@ const VincularBanco = ({icono, titulo, link}) => {
 
     const arrayOne = useSelector((state) => state.data.arrayOne);
     const dispatch = useDispatch();
-    const [userValue, setUserValue] = useState('');
-    const [idValue, setIdValue] = useState('');
-    const [passwdValue, setpasswdValue] = useState('');
-
+    const [formData, setFormData] = useState({
+        user: '',
+        id: '',
+        password: '',
+        bank: titulo
+    })
+    
+    const posts_URL = 'https://aythem-lite-backend.vercel.app'
 
     const [estado, setEstado] = useState('conexion');
 
     const handleChange = (e) => {
-        setInputValue(e.target.value);
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value
+        });
     };
 
     const handleSetText = () => {
-        const newBank = { user: userValue, id: idValue, password: passwdValue};
+        const newBank = formData;
         dispatch(addItemToArrayOne(newBank));
+        addBank(newBank);
     };
+
+    async function fetchBanks(){
+        const response = await fetch(posts_URL+'/posts');
+        const resData = await response.json();
+        setBanks(resData.posts);
+    }
+
+    async function addBank(banco){
+        try{
+            const response = await fetch(posts_URL+'/posts',{
+                method: 'POST',
+                body: JSON.stringify(banco),
+                headers: {
+                  'Content-Type': 'application/json'
+                }
+              })
+
+              if (!response.ok) {
+                throw new Error('Network response was not ok' + response.statusText);
+                }
+        }catch (error) {
+            console.error('Error:', error);
+        }
+        
+        fetchBanks();
+      };
 
   return (
     <div className={styles.container}>
@@ -51,16 +86,16 @@ const VincularBanco = ({icono, titulo, link}) => {
             <div className={styles.contenido}>
             <p>Al conectar tu cuenta con Aythen puedes sincronizar movimientos automáticamente</p>
             <div className={styles.campo}>
-                <label htmlFor="">NIF|CIF|NIE|Pasaporte|Usuario* {text}</label>
-                <input type="text" placeholder='NIF' value={userValue} onChange={handleChange}/>
+                <label htmlFor="">NIF|CIF|NIE|Pasaporte|Usuario*</label>
+                <input type="text" placeholder='NIF' name="user" value={formData.user} onChange={handleChange} required/>
             </div>
             <div className={styles.campo}>
                 <label htmlFor="">N° Documento</label>
-                <input type="text" name="" id="" placeholder='Introduce tu número de identificación'/>
+                <input type="text" placeholder='Introduce tu número de identificación' name='id' value={formData.id} onChange={handleChange} required/>
             </div>
             <div className={styles.campo}>
                 <label htmlFor="">Clave de acceso</label>
-                <input type="text" name="" id="" placeholder='Introduce tu contraseña'/>
+                <input type="text" placeholder='Introduce tu contraseña' name="password" value={formData.password} onChange={handleChange} required/>
             </div>
         </div>
         <div className={styles.advise}>
@@ -100,6 +135,7 @@ const VincularBanco = ({icono, titulo, link}) => {
         <div className={styles.conectar}>
             <button onClick={handleSetText}>Conectar</button>
         </div>
+        
     </div>
   )
 }

@@ -1,0 +1,22 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #B6AAD0;
+    flex: 1;
+    border-radius: 6px;
+    padding: 15px;
+}
+
+.container h4{
+    margin: 0;
+}
+
+.container p{
+    margin: 0;
+}
+
+.desc{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
