@@ -1,0 +1,55 @@
+.customSelectContainer {
+    position: relative;
+    width: 150px;
+}
+
+.selectedOption {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #F6F3FE;
+    color: #701BDD;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    max-height: 12px;
+}
+
+.selectedOption:hover {
+    border-color: #888;
+}
+
+.selectedOption svg{
+    color: #701BDD;
+    font-size: 23px;
+}
+
+.optionsContainer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #F6F3FE;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 1;
+}
+
+.option {
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    color: #701BDD;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.option:hover {
+    background-color: #f0f0f0;
+}

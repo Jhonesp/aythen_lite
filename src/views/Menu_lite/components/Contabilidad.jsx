@@ -2,6 +2,7 @@ import React from 'react'
 import styles from './Contabilidad.module.css'
 import { Icon } from '@iconify/react';
 import { Link } from 'react-router-dom';
+import CustomSelect from '../../../components/CustomSelect';
 
 const Contabilidad = () => {
   return (
@@ -24,9 +25,7 @@ const Contabilidad = () => {
         <div className={styles.contenido}>
             <div className={styles.top}>
                 <div>
-                    <select name="" id="">
-                        <option value="">Todos</option>
-                    </select>
+                    <CustomSelect options={[{value: 'Todos', label: 'Todos'}]}/>
                 </div>
                 <div style={{display:"flex", flexDirection:"row", gap:"8px", alignItems:"center"}}>
                     <Icon icon="ion:search-outline" id={styles.icono}/>
