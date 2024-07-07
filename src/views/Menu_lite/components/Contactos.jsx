@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import styles from './Contactos.module.css'
 import { Icon } from '@iconify/react';
 import NuevoContacto from './Contactos/NuevoContacto';
+import CustomSelect from '../../../components/CustomSelect';
 
 const Contactos = () => {
     const [showModal, setShowModal] = useState(false);
@@ -25,9 +26,7 @@ const Contactos = () => {
         <div className={styles.contenido}>
             <div className={styles.top}>
                 <div>
-                    <select name="" id="">
-                        <option value="">Todos</option>
-                    </select>
+                    <CustomSelect options={[{label: 'Todos', value:'Todos'}]} />
                 </div>
                 <div style={{display:"flex", flexDirection:"row", gap:"8px", alignItems:"center"}}>
                     <Icon icon="ion:search-outline" id={styles.icono}/>

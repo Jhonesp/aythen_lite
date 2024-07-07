@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './ResumenImpuestos.module.css'
 import ResumenCampo from './ResumenCampo'
+import CustomSelect from '../../../../components/CustomSelect'
 
 const ResumenImpuestos = () => {
   return (
@@ -10,9 +11,7 @@ const ResumenImpuestos = () => {
                     <h4>Resumen de impuestos</h4>
                 </div>
                 <div className={styles.seccion}>
-                    <select name="" id="">
-                        <option value="">Año actual</option>
-                    </select>
+                    <CustomSelect options={[{label:'Año actual', value: 'Año actual'}]} />
                 </div>
         </div>
             <div className={styles.categoria}>

@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from './ImpuestosTop.module.css'
 import ImpuestoTopCampo from './ImpuestoTopCampo'
+import CustomSelect from '../../../../components/CustomSelect'
 
 const ImpuestosTop = () => {
   return (
@@ -11,9 +12,7 @@ const ImpuestosTop = () => {
                     <h4>303 Trimestral</h4>
                 </div>
                 <div className={styles.seccion}>
-                    <select name="" id="">
-                        <option value="">2024</option>
-                    </select>
+                <CustomSelect options={[{label: '2024', value:'2024'}]} />
                 </div>
             </div>
             <div className={styles.table_top}>
